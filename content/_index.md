@@ -1,10 +1,9 @@
 ---
-title: "Mein Blog"
+title: ""
 description: "Ein persönlicher Blog über Webentwicklung und Hugo"
+image: "/images/bk_sq.png"
 ---
 
-## Willkommen auf meinem Blog
+Ich bewege mich beruflich an der Schnittstelle von Business, Technologie und Innovation. Dabei beschäftige ich mich mit digitalen Produkten, KI-Anwendungsfällen und Automatisierung und probiere viele Dinge gerne auch selbst aus.
 
-Hier schreibe ich über **Webentwicklung**, **Hugo** und alles, was mich sonst noch beschäftigt. Schau dich gerne um.
-
-![Willkommen](https://images.unsplash.com/photo-XXXXXXX?w=1200&h=630&fit=crop)
+Auf dieser Seite sammle ich einige Projekte, Experimente und Use Cases, die dabei entstanden sind. Manche davon sind kleine technische Spielereien, andere erkunden Möglichkeiten im Bereich Digitalisierung und KI.
