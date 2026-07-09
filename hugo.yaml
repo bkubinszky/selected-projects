@@ -1,6 +1,6 @@
 baseURL: 'http://localhost:1313/'
-locale: 'en-us'
-title: 'Mein Blog'
+locale: 'de-de'
+title: 'Balazs Kubinszky'
 theme: 'fortyten'
 
 params:
