@@ -1,0 +1,3 @@
+[submodule "themes/fortyten"]
+	path = themes/fortyten
+	url = https://github.com/marcelorodrigo/hugo-fortyten.git

@@ -1,0 +1,40 @@
+baseURL: 'http://localhost:1313/'
+locale: 'en-us'
+title: 'Mein Blog'
+theme: 'fortyten'
+
+params:
+  description: "Ein persönlicher Blog mit FortyTen"
+  keywords: "Hugo, Blog, Theme"
+  enableSiteSearch: true
+  author:
+    name: "Dein Name"
+    email: "deine@email.com"
+    bio: "Kurze Bio über dich"
+
+menus:
+  main:
+    - identifier: 'home'
+      name: 'Home'
+      url: '/'
+      weight: 1
+    - identifier: 'posts'
+      name: 'Posts'
+      url: '/posts'
+      weight: 2
+
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: 'assets/notwatching/hugo_stats\.json'
+      target: css
+    - source: '(postcss|tailwind)\.config\.js'
+      target: css
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json
