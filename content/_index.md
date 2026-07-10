@@ -1,6 +1,6 @@
 ---
-title: ""
-description: "Ein persönlicher Blog über Webentwicklung und Hugo"
+title: "Balázs Kubinszky, MBA"
+description: "Ein persönlicher Blog über ausgewählte Projekte, Experimente & Use Cases"
 image: "/images/bk_sq.png"
 ---
 

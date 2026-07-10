@@ -1,27 +1,19 @@
 baseURL: 'http://localhost:1313/'
 locale: 'de-de'
-title: 'Balazs Kubinszky'
+title: 'Selected Projects'
 theme: 'fortyten'
 
 params:
   description: "Ein persönlicher Blog mit FortyTen"
   keywords: "Hugo, Blog, Theme"
-  enableSiteSearch: true
+  enableSiteSearch: false
   author:
-    name: "Dein Name"
-    email: "deine@email.com"
-    bio: "Kurze Bio über dich"
-
-menus:
-  main:
-    - identifier: 'home'
-      name: 'Home'
-      url: '/'
-      weight: 1
-    - identifier: 'posts'
-      name: 'Posts'
-      url: '/posts'
-      weight: 2
+    name: "Balázs Kubinszky"
+    email: "balazs.kubinszky@gmail.com"
+  social:
+    github: "https://github.com/bkubinszky"
+    linkedin: "https://www.linkedin.com/in/bkub/"
+    email: "mailto:balazs.kubinszky@gmail.com"
 
 build:
   buildStats:

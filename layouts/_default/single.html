@@ -1,0 +1,193 @@
+{{ define "main" }}
+<div class="container mx-auto max-w-5xl px-4 py-10">
+
+  {{/* ---------- Header: category badge, title, meta ---------- */}}
+  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
+    <div>
+      {{ with .Params.category }}
+        <span class="inline-block bg-blue-600 dark:bg-blue-700 text-white text-xs font-mono uppercase tracking-wide px-3 py-1 rounded mb-4">{{ . }}</span>
+      {{ end }}
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-gray-100">{{ .Title }}</h1>
+    </div>
+
+    <div class="flex gap-8 shrink-0">
+      {{ if not .Date.IsZero }}
+      <div class="text-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400">Datum</div>
+        <div class="font-bold text-gray-900 dark:text-gray-100">{{ .Date.Format "2006" }}</div>
+      </div>
+      {{ end }}
+      {{ with .Params.status }}
+      <div class="relative group text-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400">Status</div>
+        <div class="inline-block font-bold text-gray-900 dark:text-gray-100{{ if $.Params.status_note }} cursor-help border-b border-dotted [border-bottom-style:dotted] border-gray-400 dark:border-gray-500{{ end }}">{{ . }}</div>
+        {{ with $.Params.status_note }}
+        <div class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30">
+          <div class="bg-gray-900 dark:bg-gray-700 text-white text-xs rounded-lg px-3 py-2 leading-relaxed">
+            {{ . }}
+          </div>
+          <div class="w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45 absolute left-1/2 -translate-x-1/2 -bottom-1"></div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ with .Params.github }}
+      <div class="flex flex-col items-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">GitHub</div>
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
+          <ion-icon name="link-outline" class="text-xl"></ion-icon>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* ---------- Problemstellung & Ziel ---------- */}}
+  {{ with .Params.problem }}
+  <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8 mb-8">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="information-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Problemstellung &amp; Ziel
+    </h2>
+
+    {{ with .intro }}
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">{{ . }}</p>
+    {{ end }}
+
+    {{ with .points }}
+    <ul class="space-y-2 mb-6">
+      {{ range . }}
+      <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+        <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
+        <span>{{ . }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with .quote }}
+    <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
+      <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">{{ $.Params.problem.quote_label | default "Zielsetzung" }}</div>
+      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;{{ . }}&rdquo;</p>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* ---------- Lösungsansatz & Workflow / Technologien & Stack ---------- */}}
+  {{ if or .Params.workflow .Params.stack }}
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+
+    {{ with .Params.workflow }}
+    <section class="lg:col-span-2 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+      <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <ion-icon name="git-network-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+        L&ouml;sungsansatz &amp; Workflow
+      </h2>
+
+      {{ with .intro }}
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{{ . }}</p>
+      {{ end }}
+
+      {{ with .steps }}
+      <div class="grid sm:grid-cols-2 gap-4">
+        {{ range . }}
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          {{ with .label }}<div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">{{ . }}</div>{{ end }}
+          <div class="font-bold text-gray-900 dark:text-gray-100">{{ .title }}</div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Params.stack }}
+    <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+      <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <ion-icon name="terminal-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+        Technologien &amp; Stack
+      </h2>
+      <div class="flex flex-wrap gap-2">
+        {{ range . }}
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">{{ . }}</span>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+  </div>
+  {{ end }}
+
+  {{/* ---------- Key Learnings ---------- */}}
+  {{ with .Params.learnings }}
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="help-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Key Learnings
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+      {{ range $i, $item := . }}
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">{{ printf "%02d" (add $i 1) }}</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">{{ $item.title }}</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{{ $item.text }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- Screenshots & Interface ---------- */}}
+  {{ if or .Params.screenshots .Params.future_ideas }}
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="eye-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Screenshots &amp; Interface
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+
+    {{ with .Params.screenshots }}
+    <div class="flex flex-wrap gap-4 mb-8">
+      {{ range . }}
+      <img src="{{ . }}" alt="{{ $.Title }} Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover" loading="lazy">
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.future_ideas }}
+    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+      {{ range $i, $item := . }}
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">{{ printf "%02d" (add $i 1) }}</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">{{ $item.title }}</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{{ $item.text }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* ---------- Optional free-form Markdown body ---------- */}}
+  {{ if .Content }}
+  <article class="prose dark:prose-invert max-w-none mb-10">
+    {{ .Content }}
+  </article>
+  {{ end }}
+
+  {{/* ---------- Back link ---------- */}}
+  <div class="text-center pt-6">
+    <a href="{{ "/" | absURL }}" class="inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wide px-6 py-3 rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-orange-500 dark:hover:bg-orange-600 transition-colors duration-200">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Zur&uuml;ck
+    </a>
+  </div>
+
+</div>
+{{ end }}
