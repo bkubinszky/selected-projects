@@ -5,8 +5,8 @@ title: 'Balázs Kubinszky'
 theme: 'fortyten'
 
 params:
-  description: "Ein persönlicher Blog mit FortyTen"
-  keywords: "Hugo, Blog, Theme"
+  description: "Ausgewählte Projekte, Experimente und Use Cases"
+  keywords: "Kubinszky, Blog"
   enableSiteSearch: false
   author:
     name: "Balázs Kubinszky"
