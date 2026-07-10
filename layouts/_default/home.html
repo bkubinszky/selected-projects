@@ -8,7 +8,7 @@
     </div>
     {{ with .Params.image }}
     <div class="flex-1 flex justify-center">
-      <img src="{{ . | relURL }}" alt="{{ $.Params.title }}" class="rounded w-full max-w-xs md:max-w-sm h-full object-cover">
+      <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Params.title }}" class="rounded w-full max-w-xs md:max-w-sm h-full object-cover">
     </div>
     {{ end }}
   </div>

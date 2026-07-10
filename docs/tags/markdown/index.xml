@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Markdown on Balázs Kubinszky</title>
-		<link>http://localhost:1313/selected-projects/tags/markdown/</link>
+		<link>https://bkubinszky.github.io/selected-projects/tags/markdown/</link>
 		<description>Recent content in Markdown on Balázs Kubinszky</description>
 		<generator>Hugo</generator>
 		<language>de-de</language>
@@ -14,12 +14,12 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/selected-projects/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://bkubinszky.github.io/selected-projects/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Career Profile Repository</title>
-				<link>http://localhost:1313/selected-projects/posts/karriere-profil/</link>
+				<link>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>http://localhost:1313/selected-projects/posts/karriere-profil/</guid>
+				<guid>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</guid>
 				<description></description>
 			</item>
 	</channel>
