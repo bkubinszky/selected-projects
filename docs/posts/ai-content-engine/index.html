@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de-de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>[x-cloak] { display: none !important; }</style><script>
+  (function() {
+    var isDark = localStorage.theme !== 'light';
+    document.documentElement.classList.toggle('dark', isDark);
+  })();
+</script>
+<title>AI Content Engine | Balázs Kubinszky</title>
+<link rel="icon" type="image/png" href="https://bkubinszky.github.io/selected-projects/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="https://bkubinszky.github.io/selected-projects/favicon.svg" />
+<link rel="shortcut icon" href="https://bkubinszky.github.io/selected-projects/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://bkubinszky.github.io/selected-projects/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Balázs Kubinszky" />
+
+<meta name="author" content="Balázs Kubinszky">
+<meta name="description" content="Ein persönlicher Blog mit FortyTen">
+<meta name="keywords" content="Hugo, Blog, Theme">
+
+  
+  
+    
+      
+        <link rel="stylesheet" href="/selected-projects/css/main.2ec60b87b5742dc7773c87a5821566339492353cf27e801a75d969f52f8f27ae.css" integrity="sha256-LsYLh7V0Lcd3PIelghVmM5SSNTzyfoAaddlp9S&#43;PJ64=" crossorigin="anonymous">
+      
+    
+  
+
+
+
+  
+  
+    
+      
+        <script src="/selected-projects/js/utilities.f000481cc43e98f11bf592fcd2366747b3ceaa3f577a7f14d88af6cbb3608597.js" integrity="sha256-8ABIHMQ&#43;mPEb9ZL80jZnR7POqj9Xen8U2Ir2y7NghZc=" crossorigin="anonymous"></script>
+      
+    
+  
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.3/dist/cdn.min.js" integrity="sha384-4E5IZutrbnm0GBnBqEA2tgLsTg6ublElJlpE9qQQNL0WrY9g4GPahFyJYwnDet2+" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <header>
+      <header class="pt-4 dark:bg-gray-900" x-data="{}">
+    <div class="container mx-auto py-8">
+        <div class="flex flex-row justify-between items-center">
+            <h1 id="logo">
+                <a href="https://bkubinszky.github.io/selected-projects/" title="Home"
+                   class="text-2xl antialiased font-extrabold hover:text-orange-600 dark:hover:text-orange-400 dark:text-gray-100 transition ease-in-out">Selected Projects</a>
+            </h1>
+
+            <div class="flex items-center gap-2">
+                
+                <a href="https://github.com/bkubinszky" target="_blank" rel="noopener noreferrer" title="GitHub"
+                   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <ion-icon name="logo-github" class="text-xl" aria-hidden="true"></ion-icon>
+                </a>
+                
+
+                
+                <a href="https://www.linkedin.com/in/bkub/" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <ion-icon name="logo-linkedin" class="text-xl" aria-hidden="true"></ion-icon>
+                </a>
+                
+
+                
+                <a href="mailto:balazs.kubinszky@gmail.com" title="E-Mail"
+                   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <ion-icon name="mail-outline" class="text-xl" aria-hidden="true"></ion-icon>
+                </a>
+                
+
+                <button 
+  x-data="{ 
+    isDark: document.documentElement.classList.contains('dark'),
+    toggle() {
+      this.isDark = !this.isDark;
+      document.documentElement.classList.toggle('dark', this.isDark);
+      localStorage.theme = this.isDark ? 'dark' : 'light';
+    }
+  }"
+  @click="toggle()"
+  :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+  type="button"
+  class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+  title="Toggle theme"
+>
+  <ion-icon x-show="isDark" name="sunny" class="text-xl" aria-hidden="true" x-cloak></ion-icon>
+  <ion-icon x-show="!isDark" name="moon" class="text-xl" aria-hidden="true" x-cloak></ion-icon>
+</button>
+
+            </div>
+        </div>
+    </div>
+</header>
+    </header>
+    <main>
+      
+<div class="container mx-auto max-w-5xl px-4 py-10">
+
+  
+  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
+    <div>
+      
+        <span class="inline-block bg-blue-600 dark:bg-blue-700 text-white text-xs font-mono uppercase tracking-wide px-3 py-1 rounded mb-4">Automated AI Workflow</span>
+      
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-gray-100">AI Content Engine</h1>
+    </div>
+
+    <div class="flex gap-8 shrink-0">
+      
+      
+      <div class="relative group text-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400">Status</div>
+        <div class="inline-block font-bold text-gray-900 dark:text-gray-100 cursor-help border-b border-dotted [border-bottom-style:dotted] border-gray-400 dark:border-gray-500">MVP</div>
+        
+        <div class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30">
+          <div class="bg-gray-900 dark:bg-gray-700 text-white text-xs rounded-lg px-3 py-2 leading-relaxed">
+            Erste funktionierende Version, die bereits produktiv läuft und laufend erweitert wird.
+          </div>
+          <div class="w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45 absolute left-1/2 -translate-x-1/2 -bottom-1"></div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="flex flex-col items-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">GitHub</div>
+        <a href="https://github.com/bkubinszky/rss-digest" target="_blank" rel="noopener noreferrer" class="inline-flex text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
+          <ion-icon name="link-outline" class="text-xl"></ion-icon>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  
+  <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8 mb-8">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="information-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Problemstellung &amp; Ziel
+    </h2>
+
+    
+    <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-4">
+      Wir verbringen viel zu viel Zeit damit, für uns relevante Nachrichten aus der Flut an Informationen herauszufiltern. Ziel dieses Projekts war die Entwicklung eines autonomen Systems zur Aggregation einer Vielzahl von RSS-Feeds, zur inhaltlichen Bewertung anhand vordefinierter Kriterien sowie zur strukturierten Aufbereitung der wichtigsten Erkenntnisse.
+    </div>
+    
+
+    
+    <ul class="space-y-2 mb-6">
+      
+      <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+        <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
+        <span>Laufende manuelle Sichtung der Quellen entfällt vollständig.</span>
+      </li>
+      
+      <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+        <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
+        <span>Nur relevante Informationen statt Informationsüberlastung.</span>
+      </li>
+      
+      <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+        <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
+        <span>More signal, less noise.</span>
+      </li>
+      
+    </ul>
+    
+
+    
+    <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
+      <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">Zielsetzung</div>
+      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;Reduzierung der täglichen Recherchezeit bei gleichzeitiger Erhöhung der Informationstiefe durch LLM-gestützte Analyse. Fokus auf die relevantesten Artikel statt auf die manuelle Sichtung großer Informationsmengen.&rdquo;</p>
+    </div>
+    
+  </section>
+  
+
+  
+  
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+
+    
+    <section class="lg:col-span-2 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+      <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <ion-icon name="git-network-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+        L&ouml;sungsansatz &amp; Workflow
+      </h2>
+
+      
+      <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-8">
+        Implementierung einer vollautomatischen, modularen News-Pipeline. Die Python-basierte Lösung wurde mit Claude Code unter Einhaltung verschiedener Security Best Practices aufgesetzt, so dass sensible Daten, Zugangsdaten, persönliche Präferenzen usw. nicht veröffentlicht werden. Das Script kann an jede beliebige LLM API angebunden werden. Ich habe Gemini als Basis und Groq als Fallback verwendet, beide im Free-Tier-Bereich.
+      </div>
+      
+
+      
+      <div class="grid sm:grid-cols-2 gap-4">
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 1: Configuration</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">RSS Feedlist &amp; persönliche Interessen definieren</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 2: Fetching</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">GitHub Actions &amp; Cron gesteuertes Auslesen der Feeds</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 3: Analysis</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">KI-gestütztes Filtern und Bewerten der Artikel</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 4: Summary (optional)</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">KI-gestützte Zusammenfassung</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 5: Compilation</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">E-Mail mit Output</div>
+        </div>
+        
+      </div>
+      
+    </section>
+    
+
+    
+    <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+      <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <ion-icon name="terminal-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+        Technologien &amp; Stack
+      </h2>
+      <div class="flex flex-wrap gap-2">
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Claude</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Python</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Actions</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Cron</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Secrets</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">HTML/CSS</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Groq API</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Gemini API</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Markdown</span>
+        
+      </div>
+    </section>
+    
+
+  </div>
+  
+
+  
+  
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="help-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Key Learnings
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Architektur</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Monolithischen Code früh in Module aufteilen zahlt sich bei späteren Änderungen aus.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Git</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Sauberes Branching auch bei kleinen Projekten spart viel Mühe.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Mock Mode</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Auch das großzügigste Free Tier ist beim Testen schnell aufgebraucht, deshalb von Anfang an mit Mock Mode arbeiten.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Security</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Ein Security Audit durch ein zweites LLM am Ende war überraschend wertvoll und hat echte Findings gebracht.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">05</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Nutzen</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Weniger ist mehr: v4 ohne Summaries ist schneller, günstiger, und in den meisten Fällen genauso nützlich wie v3 mit Summaries.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section class="mb-10" x-data='{ open: false, index: 0, images: [&#34;/images/rss-digest/RSS_scrsht1.jpg&#34;] }' @keydown.escape.window="open = false" @keydown.arrow-left.window="if (open) index = (index - 1 + images.length) % images.length" @keydown.arrow-right.window="if (open) index = (index + 1) % images.length">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="eye-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Screenshots &amp; Interface
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="flex flex-wrap gap-4">
+      
+      <button type="button" @click="open = true; index = 0" class="cursor-zoom-in">
+        <img src="/images/rss-digest/RSS_scrsht1.jpg" alt="AI Content Engine Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
+      </button>
+      
+    </div>
+
+    <div
+      x-show="open"
+      x-transition.opacity
+      @click="open = false"
+      class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6 md:p-16 cursor-zoom-out"
+      style="display: none;"
+    >
+      <img :src="images[index]" class="max-w-3xl max-h-[75vh] w-auto h-auto rounded-lg cursor-default" @click.stop>
+
+      <button type="button" @click.stop="index = (index - 1 + images.length) % images.length" x-show="images.length > 1" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+      <button type="button" @click.stop="index = (index + 1) % images.length" x-show="images.length > 1" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+      <button type="button" @click.stop="open = false" class="absolute top-4 right-4 md:top-6 md:right-6 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div x-show="images.length > 1" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm font-mono" x-text="(index + 1) + ' / ' + images.length"></div>
+    </div>
+  </section>
+  
+
+  
+  
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="trending-up-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Erweiterungsoptionen &amp; &Uuml;berlegungen
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Keyword watchlist</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Bestimmte Begriffe (Firmenname, Technologie, Person) boosten den Score automatisch. Praktisch wenn man spezifische Themen eng verfolgen will.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Blacklist</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Hard-Filter für bestimmte Themen per Blacklist einstellen.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Newsletter Integration</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Datenquellen neben RSS-Kanälen mit Newslettern ergänzen (z.B. via Kill-the-Newsletter).</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Personalisiertes Scoring</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Statt einem globalen Interesse-Profil könnte man pro Feed unterschiedliche Gewichtungen setzen.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">05</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Feedback Loop</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Einfache Like/Dislike Buttons pro Artikel in der Mail, der einen Score in einer lokalen Datei speichert. Über Zeit lernt das System die eigenen Präferenzen.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">06</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Weitere Output Kanäle</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Telegram, Whatsapp, Slack, Teams u.ä. anstatt E-Mail Versand.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">07</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Lokale KI</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">LLM-APIs könnten durch eine lokale KI ersetzt werden.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  
+
+  
+  <div class="text-center pt-6">
+    <a href="https://bkubinszky.github.io/" class="inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wide px-6 py-3 rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-orange-500 dark:hover:bg-orange-600 transition-colors duration-200">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Zur&uuml;ck
+    </a>
+  </div>
+
+</div>
+
+    </main>
+    <footer>
+      <footer class="container mx-auto flex justify-center items-center text-sm pt-10 pb-6 flex-wrap gap-4 text-gray-700 dark:text-gray-300">
+    <div>
+         
+            2026 &copy; Balázs Kubinszky. All Rights Reserved.
+        
+    </div>
+</footer>
+    </footer>
+  </div>
+   
+   
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

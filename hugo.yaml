@@ -1,4 +1,5 @@
-baseURL: 'http://localhost:1313/'
+baseURL: "https://bkubinszky.github.io/selected-projects/"
+publishDir: "docs"
 locale: 'de-de'
 title: 'Balázs Kubinszky'
 theme: 'fortyten'
