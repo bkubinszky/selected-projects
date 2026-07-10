@@ -24,7 +24,7 @@
         {{ with $.Params.status_note }}
         <div class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30">
           <div class="bg-gray-900 dark:bg-gray-700 text-white text-xs rounded-lg px-3 py-2 leading-relaxed">
-            {{ . }}
+            {{ (. | markdownify | replaceRE "^<p>" "" | replaceRE "</p>\n?$" "") | safeHTML }}
           </div>
           <div class="w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45 absolute left-1/2 -translate-x-1/2 -bottom-1"></div>
         </div>
@@ -51,7 +51,9 @@
     </h2>
 
     {{ with .intro }}
-    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">{{ . }}</p>
+    <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-4">
+      {{ . | markdownify }}
+    </div>
     {{ end }}
 
     {{ with .points }}
@@ -59,7 +61,7 @@
       {{ range . }}
       <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
         <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
-        <span>{{ . }}</span>
+        <span>{{ (. | markdownify | replaceRE "^<p>" "" | replaceRE "</p>\n?$" "") | safeHTML }}</span>
       </li>
       {{ end }}
     </ul>
@@ -68,7 +70,7 @@
     {{ with .quote }}
     <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
       <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">{{ $.Params.problem.quote_label | default "Zielsetzung" }}</div>
-      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;{{ . }}&rdquo;</p>
+      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;{{ (. | markdownify | replaceRE "^<p>" "" | replaceRE "</p>\n?$" "") | safeHTML }}&rdquo;</p>
     </div>
     {{ end }}
   </section>
@@ -86,7 +88,9 @@
       </h2>
 
       {{ with .intro }}
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{{ . }}</p>
+      <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-8">
+        {{ . | markdownify }}
+      </div>
       {{ end }}
 
       {{ with .steps }}
@@ -133,7 +137,7 @@
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">{{ printf "%02d" (add $i 1) }}</div>
         <div>
           <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">{{ $item.title }}</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{{ $item.text }}</p>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{{ ($item.text | markdownify | replaceRE "^<p>" "" | replaceRE "</p>\n?$" "") | safeHTML }}</p>
         </div>
       </div>
       {{ end }}
@@ -142,35 +146,66 @@
   {{ end }}
 
   {{/* ---------- Screenshots & Interface ---------- */}}
-  {{ if or .Params.screenshots .Params.future_ideas }}
-  <section class="mb-10">
+  {{ with .Params.screenshots }}
+  {{ $images := . }}
+  <section class="mb-10" x-data='{ open: false, index: 0, images: {{ $images | jsonify }} }' @keydown.escape.window="open = false" @keydown.arrow-left.window="if (open) index = (index - 1 + images.length) % images.length" @keydown.arrow-right.window="if (open) index = (index + 1) % images.length">
     <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
       <ion-icon name="eye-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
       Screenshots &amp; Interface
     </h2>
     <hr class="border-gray-200 dark:border-gray-700 mb-6">
-
-    {{ with .Params.screenshots }}
-    <div class="flex flex-wrap gap-4 mb-8">
-      {{ range . }}
-      <img src="{{ . }}" alt="{{ $.Title }} Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover" loading="lazy">
+    <div class="flex flex-wrap gap-4">
+      {{ range $i, $img := $images }}
+      <button type="button" @click="open = true; index = {{ $i }}" class="cursor-zoom-in">
+        <img src="{{ $img }}" alt="{{ $.Title }} Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
+      </button>
       {{ end }}
     </div>
-    {{ end }}
 
-    {{ with .Params.future_ideas }}
+    <div
+      x-show="open"
+      x-transition.opacity
+      @click="open = false"
+      class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6 md:p-16 cursor-zoom-out"
+      style="display: none;"
+    >
+      <img :src="images[index]" class="max-w-3xl max-h-[75vh] w-auto h-auto rounded-lg cursor-default" @click.stop>
+
+      <button type="button" @click.stop="index = (index - 1 + images.length) % images.length" x-show="images.length > 1" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+      <button type="button" @click.stop="index = (index + 1) % images.length" x-show="images.length > 1" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+      <button type="button" @click.stop="open = false" class="absolute top-4 right-4 md:top-6 md:right-6 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div x-show="images.length > 1" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm font-mono" x-text="(index + 1) + ' / ' + images.length"></div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ---------- Erweiterungsoptionen & Überlegungen ---------- */}}
+  {{ with .Params.future_ideas }}
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="trending-up-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Erweiterungsoptionen &amp; &Uuml;berlegungen
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
     <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
       {{ range $i, $item := . }}
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">{{ printf "%02d" (add $i 1) }}</div>
         <div>
           <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">{{ $item.title }}</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{{ $item.text }}</p>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{{ ($item.text | markdownify | replaceRE "^<p>" "" | replaceRE "</p>\n?$" "") | safeHTML }}</p>
         </div>
       </div>
       {{ end }}
     </div>
-    {{ end }}
   </section>
   {{ end }}
 

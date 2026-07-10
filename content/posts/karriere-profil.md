@@ -1,14 +1,14 @@
 ---
-title: "RSS Digest & KI-News-Zusammenfassung"
-preview: false
-order: 10
-icon: "newspaper-outline"
+title: "Career Profile Repository"
+preview: true
+order: 40
+icon: "document-text-outline"
 category: "Automated AI Workflow"
 status: "MVP"
 status_note: "Erste funktionierende Version, die bereits produktiv läuft und laufend erweitert wird."
 github: "https://github.com/bkubinszky/rss-digest"
-tags: ["Automatisierung", "AI Workflow", "Python", "LLM", "API"]
-description: "Vollautomatisierter Workflow zur Sammlung, Filterung, Analyse und KI-gestützten Zusammen&shy;fassung relevanter Nachrichten aus RSS-Quellen"
+tags: ["JSON", "Markdown", "LLM-ready"]
+description: "Strukturierte Datenhaltung beruflicher Meilensteine in LLM-optimierten Formaten"
 
 problem:
   intro: "Wir verbringen viel zu viel Zeit damit, für uns relevante Nachrichten aus der Flut an Informationen herauszufiltern. Ziel dieses Projekts war die Entwicklung eines autonomen Systems zur Aggregation einer Vielzahl von RSS-Feeds, zur inhaltlichen Bewertung anhand vordefinierter Kriterien sowie zur strukturierten Aufbereitung der wichtigsten Erkenntnisse."

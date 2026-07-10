@@ -1,6 +1,7 @@
 ---
 title: "Wien Ticker"
-date: 2025-10-15
+preview: false
+order: 20
 icon: "bus-outline"
 category: "Real-Time Open Data Application"
 status: "WPT"

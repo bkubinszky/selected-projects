@@ -1,6 +1,7 @@
 ---
-title: "LLM-lesbarer Produktkatalog für agentischen Handel"
-date: 2025-09-15
+title: "Maschinenlesbarer Produktkatalog für KI-Agenten & -Anwendungen"
+preview: false
+order: 30
 icon: "cart-outline"
 category: "Agentic Commerce"
 status: "WT"
@@ -17,7 +18,11 @@ problem:
   quote: "Entwicklung einer Applikation das bestehende Legacy-Produktkataloge maschinenlesbar macht, indem die Produktinformationen in eine für LLMs und KI-Agenten optimierte Struktur umwandelt, anreichert und bereitstellt."
 
 workflow:
-  intro: "Dieses Projekt ist derzeit in der Ideation Phase, wo ich ähnliche bestehende Lösungen recherchiere und kleinere Test bzgl. der Machbarkeit der Teilaufgaben durchführe. <br><br> <b>Working Theory:</b>Entwicklung eines prototypischen Produktkatalogs für ausgewählte Outdoor-Marken. Die Produktdaten werden aus unterschiedlichen Quellen aggregiert, normalisiert und um zusätzliche Metadaten ergänzt. Anschließend werden die Informationen in einer strukturierten JSON-Architektur gespeichert, die von LLMs, RAG-Systemen oder Agenten direkt verarbeitet werden kann."
+  intro: |
+    Dieses Projekt ist derzeit in der Ideation Phase, wo ich ähnliche bestehende Lösungen recherchiere und kleinere Test bzgl. der Machbarkeit der Teilaufgaben durchführe.
+
+  
+    **Working Theory**: Entwicklung eines prototypischen Produktkatalogs für ausgewählte Outdoor-Marken. Die Produktdaten werden aus unterschiedlichen Quellen aggregiert, normalisiert und um zusätzliche Metadaten ergänzt. Anschließend werden die Informationen in einer strukturierten JSON-Architektur gespeichert, die von LLMs, RAG-Systemen oder Agenten direkt verarbeitet werden kann.
   steps:
     - label: "Schritt 1: Normalisierung der Legacy-Datenbank"
       title: "Vereinheitlichung von Kategorien, Attributen und Datenstrukturen"

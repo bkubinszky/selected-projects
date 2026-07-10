@@ -1,6 +1,6 @@
 baseURL: 'http://localhost:1313/'
 locale: 'de-de'
-title: 'Selected Projects'
+title: 'Balázs Kubinszky'
 theme: 'fortyten'
 
 params:
@@ -13,7 +13,7 @@ params:
   social:
     github: "https://github.com/bkubinszky"
     linkedin: "https://www.linkedin.com/in/bkub/"
-    email: "mailto:balazs.kubinszky@gmail.com"
+    email: "balazs.kubinszky@gmail.com"
 
 build:
   buildStats:
