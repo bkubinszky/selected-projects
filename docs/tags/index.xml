@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tags on Balázs Kubinszky</title>
-		<link>https://bkubinszky.github.io/selected-projects/tags/</link>
+		<link>http://localhost:1313/selected-projects/tags/</link>
 		<description>Recent content in Tags on Balázs Kubinszky</description>
 		<generator>Hugo</generator>
 		<language>de-de</language>
@@ -14,117 +14,117 @@
 		
 		
 		
-			<atom:link href="https://bkubinszky.github.io/selected-projects/tags/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/selected-projects/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>AEO</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/aeo/</link>
+				<link>http://localhost:1313/selected-projects/tags/aeo/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/aeo/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/aeo/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Agentic Commerce</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/agentic-commerce/</link>
+				<link>http://localhost:1313/selected-projects/tags/agentic-commerce/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/agentic-commerce/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/agentic-commerce/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>AI Workflow</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/ai-workflow/</link>
+				<link>http://localhost:1313/selected-projects/tags/ai-workflow/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/ai-workflow/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/ai-workflow/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>API</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/api/</link>
+				<link>http://localhost:1313/selected-projects/tags/api/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/api/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/api/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Automatisierung</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/automatisierung/</link>
+				<link>http://localhost:1313/selected-projects/tags/automatisierung/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/automatisierung/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/automatisierung/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Content</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/content/</link>
+				<link>http://localhost:1313/selected-projects/tags/content/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/content/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/content/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Https</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/https/</link>
+				<link>http://localhost:1313/selected-projects/tags/https/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/https/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/https/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>JSON</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/json/</link>
+				<link>http://localhost:1313/selected-projects/tags/json/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/json/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/json/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LLM</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/llm/</link>
+				<link>http://localhost:1313/selected-projects/tags/llm/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/llm/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/llm/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LLM-Ready</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/llm-ready/</link>
+				<link>http://localhost:1313/selected-projects/tags/llm-ready/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/llm-ready/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/llm-ready/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Markdown</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/markdown/</link>
+				<link>http://localhost:1313/selected-projects/tags/markdown/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/markdown/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/markdown/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>MarTech</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/martech/</link>
+				<link>http://localhost:1313/selected-projects/tags/martech/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/martech/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/martech/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Open Data</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/open-data/</link>
+				<link>http://localhost:1313/selected-projects/tags/open-data/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/open-data/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/open-data/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>PIM</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/pim/</link>
+				<link>http://localhost:1313/selected-projects/tags/pim/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/pim/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/pim/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Produktdaten</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/produktdaten/</link>
+				<link>http://localhost:1313/selected-projects/tags/produktdaten/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/produktdaten/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/produktdaten/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Python</title>
-				<link>https://bkubinszky.github.io/selected-projects/tags/python/</link>
+				<link>http://localhost:1313/selected-projects/tags/python/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/tags/python/</guid>
+				<guid>http://localhost:1313/selected-projects/tags/python/</guid>
 				<description></description>
 			</item>
 	</channel>

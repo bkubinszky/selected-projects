@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Balázs Kubinszky, MBA on Balázs Kubinszky</title>
-		<link>https://bkubinszky.github.io/selected-projects/</link>
+		<link>http://localhost:1313/selected-projects/</link>
 		<description>Recent content in Balázs Kubinszky, MBA on Balázs Kubinszky</description>
 		<generator>Hugo</generator>
 		<language>de-de</language>
@@ -14,40 +14,40 @@
 		
 		
 		
-			<atom:link href="https://bkubinszky.github.io/selected-projects/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/selected-projects/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>AI Content Engine</title>
-				<link>https://bkubinszky.github.io/selected-projects/posts/ai-content-engine/</link>
+				<link>http://localhost:1313/selected-projects/posts/ai-content-engine/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/posts/ai-content-engine/</guid>
+				<guid>http://localhost:1313/selected-projects/posts/ai-content-engine/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Career Profile Repository</title>
-				<link>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</link>
+				<link>http://localhost:1313/selected-projects/posts/karriere-profil/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</guid>
+				<guid>http://localhost:1313/selected-projects/posts/karriere-profil/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Maschinenlesbarer Produktkatalog für KI-Agenten &amp; -Anwendungen</title>
-				<link>https://bkubinszky.github.io/selected-projects/posts/llm-prodcat/</link>
+				<link>http://localhost:1313/selected-projects/posts/llm-prodcat/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/posts/llm-prodcat/</guid>
+				<guid>http://localhost:1313/selected-projects/posts/llm-prodcat/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>RSS Digest &amp; KI-News-Zusammenfassung</title>
-				<link>https://bkubinszky.github.io/selected-projects/posts/rss-digest/</link>
+				<link>http://localhost:1313/selected-projects/posts/rss-digest/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/posts/rss-digest/</guid>
+				<guid>http://localhost:1313/selected-projects/posts/rss-digest/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Wien Ticker</title>
-				<link>https://bkubinszky.github.io/selected-projects/posts/wien-ticker/</link>
+				<link>http://localhost:1313/selected-projects/posts/wien-ticker/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/posts/wien-ticker/</guid>
+				<guid>http://localhost:1313/selected-projects/posts/wien-ticker/</guid>
 				<description></description>
 			</item>
 	</channel>
