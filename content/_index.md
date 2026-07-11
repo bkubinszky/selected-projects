@@ -4,6 +4,6 @@ description: "Ein persönlicher Blog über ausgewählte Projekte, Experimente & 
 image: "/images/bk_sq.png"
 ---
 
-Ich bewege mich beruflich an der Schnittstelle von Business, Technologie und Innovation. Dabei beschäftige ich mich mit digitalen Produkten, KI-Anwendungsfällen und Automatisierung und probiere viele Dinge gerne auch selbst aus.
+In meiner Arbeit verbinde ich wirtschaftliche Fragestellungen mit innovativen technischen Möglichkeiten. Ich setze mich praktisch mit digitalen Produkten, KI und Automatisierung auseinander und probiere vieles selbst aus.
 
-Auf dieser Seite sammle ich einige Projekte, Experimente und Use Cases, die dabei entstanden sind. Manche davon sind kleine technische Spielereien, andere erkunden Möglichkeiten im Bereich Digitalisierung und KI.
+Hier zeige ich einige Projekte und Experimente, die dabei entstanden sind – von kleinen technischen Versuchen bis hin zu konkreten Anwendungsbeispielen. Diese Sammlung ist ein Work in Progress und wird stetig ergänzt.
