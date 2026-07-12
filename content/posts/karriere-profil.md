@@ -1,6 +1,7 @@
 ---
 title: "Career Profile Repository"
 preview: true
+date: 2026-05-01
 order: 40
 icon: "document-text-outline"
 category: "Automated AI Workflow"

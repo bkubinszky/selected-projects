@@ -1,6 +1,7 @@
 ---
 title: "RSS Digest & KI-News-Zusammenfassung"
 preview: false
+date: 2026-03-15
 order: 10
 icon: "newspaper-outline"
 category: "Automated AI Workflow"

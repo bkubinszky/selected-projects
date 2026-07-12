@@ -1,6 +1,7 @@
 ---
 title: "Wien Ticker"
 preview: false
+date: 2025-11-15
 order: 20
 icon: "bus-outline"
 category: "Real-Time Open Data Application"

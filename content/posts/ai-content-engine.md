@@ -1,6 +1,7 @@
 ---
 title: "AI Content Engine"
 preview: true
+date: 2026-02-15
 order: 40
 icon: "color-wand-outline"
 category: "Automated AI Workflow"

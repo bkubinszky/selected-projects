@@ -1,6 +1,7 @@
 ---
 title: "Maschinenlesbarer Produktkatalog für KI-Agenten & -Anwendungen"
 preview: false
+date: 2026-05-15
 order: 30
 icon: "cart-outline"
 category: "Agentic Commerce"

@@ -21,6 +21,10 @@
     {{ range site.RegularPages.ByParam "order" }}
       {{ partial "post-card.html" . }}
     {{ end }}
+      <div class="flex flex-col items-center justify-center text-center italic text-gray-400 dark:text-gray-500 gap-2">
+        <ion-icon name="hourglass-outline" class="text-3xl not-italic"></ion-icon>
+        Weitere folgen &hellip;
+      </div>
     </section>
   </div>
 {{ end }}
