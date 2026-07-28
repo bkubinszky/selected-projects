@@ -12,11 +12,11 @@ tags: ["GitHub Actions", "GitHub Secrets", "Python", "SMTP", "HTML", "CSS"]
 description: "Ein kleines Python-Projekt zur Überwachung der Verfügbarkeit von Websites über GitHub Actions und zum Versenden von E-Mail-Benachrichtigungen, falls eine Website ausfällt."
 
 problem:
-  intro: "Websites und Services können jederzeit ausfallen, oft unbemerkt, bis Nutzer:innen selbst darauf stoßen. Ohne eigene Serverinfrastruktur oder kostenpflichtige Monitoring-Dienste bleibt ein Ausfall häufig für Stunden oder Tage unentdeckt. Der Uptime Monitor löst dieses Problem durch eine serverlose, kostenfreie Lösung, die ausschließlich auf bestehender GitHub-Infrastruktur läuft und automatisiert per E-Mail informiert, sobald ein überwachter Dienst nicht mehr erreichbar ist."
+  intro: "Websites und Services können jederzeit ausfallen, oft unbemerkt, bis Nutzer selbst darauf stoßen. Ohne eigene Serverinfrastruktur oder kostenpflichtige Monitoring-Dienste bleibt ein Ausfall häufig längere Zeit unentdeckt. Der Uptime Monitor löst dieses Problem durch eine serverlose, kostenfreie Lösung, die ausschließlich auf bestehender GitHub-Infrastruktur läuft und automatisiert per E-Mail informiert, sobald ein überwachter Dienst nicht mehr erreichbar ist."
   points:
   
   quote_label: "Zielsetzung"
-  quote: "Bereitstellung eines kostenlosen, wartungsarmen Systems zur automatisierten Überwachung mehrerer Websites mit sofortiger Benachrichtigung bei Ausfällen. Es gibt viele Online Dienste, die das anbieten (auch mit free tier bis zu einer Größenrodnung), z.B. https://uptimerobot.com. Mein Ziel war es, ohne ein 3rd-party Tool zu lösen."
+  quote: "Entwicklung eines kostenlosen, wartungsarmen Systems zur automatisierten Überwachung mehrerer Websites mit Benachrichtigung bei Ausfällen. Obwohl es viele Online Dienste gibt, die ein uptime monitoring anbieten (auch mit free tier bis zu einer begrenzten Größenordnung), z.B. https://uptimerobot.com, war es mein Ziel, die Problemstellung ohne ein 3rd-party Tool zu lösen."
 
 workflow:
   intro: Entwicklung eines schlanken, serverlosen Monitoring-Tools auf Basis von Python und GitHub Actions. Die Lösung prüft in konfigurierbaren Intervallen den Status mehrerer Websites und versendet bei einem erkannten Ausfall automatisch eine übersichtliche HTML-E-Mail mit Statusübersicht. Sämtliche Konfiguration, von der zu überwachenden Website-Liste bis zu den E-Mail-Zugangsdaten, wird sicher über GitHub Secrets verwaltet, ohne dass sensible Daten im Code oder Repository sichtbar sind. Besonderes Augenmerk lag auf einer robusten Fehlerbehandlung, sicherer Konfigurationsverwaltung und einer klar strukturierten, gut lesbaren Benachrichtigungs-E-Mail.
