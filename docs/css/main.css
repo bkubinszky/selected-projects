@@ -1114,6 +1114,9 @@
   .max-h-\[75vh\] {
     max-height: 75vh;
   }
+  .min-h-64 {
+    min-height: calc(var(--spacing) * 64);
+  }
   .w-2 {
     width: calc(var(--spacing) * 2);
   }

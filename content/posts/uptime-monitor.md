@@ -3,7 +3,7 @@ title: "Uptime Monitor"
 preview: true
 date: 2026-07-27
 order: 31
-icon: "binoculars-outline"
+icon: "telescope-outline"
 category: "Website Uptime Monitoring"
 status: "WPT"
 status_note: "Working Prototype: das erste funktionstüchtige Modell eines Produkts."
