@@ -156,7 +156,7 @@
 
     
     <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-4">
-      Viele nutzen regelmäßig dieselben Haltestellen und müssen für die nächste Abfahrtszeit entweder eine App öffnen oder eine Website aufrufen. Wien-Ticker löst dieses Problem, indem die relevanten Echtzeit-Abfahrten der Wiener Linien dauerhaft in einem kompakten Desktop-Widget angezeigt werden und somit jederzeit auf einen Blick verfügbar sind.
+      Websites und Services können jederzeit ausfallen, oft unbemerkt, bis Nutzer:innen selbst darauf stoßen. Ohne eigene Serverinfrastruktur oder kostenpflichtige Monitoring-Dienste bleibt ein Ausfall häufig für Stunden oder Tage unentdeckt. Der Uptime Monitor löst dieses Problem durch eine serverlose, kostenfreie Lösung, die ausschließlich auf bestehender GitHub-Infrastruktur läuft und automatisiert per E-Mail informiert, sobald ein überwachter Dienst nicht mehr erreichbar ist.
     </div>
     
 
@@ -165,7 +165,7 @@
     
     <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
       <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">Zielsetzung</div>
-      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;Bereitstellung einer einfachen Desktop-Anwendung zur kontinuierlichen Anzeige personalisierter Echtzeit-Abfahrtsinformationen der Wiener Linien.&rdquo;</p>
+      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;Bereitstellung eines kostenlosen, wartungsarmen Systems zur automatisierten Überwachung mehrerer Websites mit sofortiger Benachrichtigung bei Ausfällen. Es gibt viele Online Dienste, die das anbieten (auch mit free tier bis zu einer Größenrodnung), z.B. <a href="https://uptimerobot.com">https://uptimerobot.com</a>. Mein Ziel war es, ohne ein 3rd-party Tool zu lösen.&rdquo;</p>
     </div>
     
   </section>
@@ -184,7 +184,7 @@
 
       
       <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-8">
-        Entwicklung einer schlanken Desktop-Anwendung zur Anzeige von Echtzeit-Abfahrtsinformationen der Wiener Linien. Die Python-basierte Lösung greift über die Open-Data-Schnittstelle der Wiener Linien auf aktuelle Verkehrsdaten zu und stellt diese in einem permanent verfügbaren Desktop-Widget dar. Nutzer:innen können individuelle Haltestellen und Linien konfigurieren, sodass nur die für sie relevanten Verbindungen angezeigt werden. Besonderes Augenmerk lag auf einer einfachen Bedienung, robuster Fehlerbehandlung und einer ressourcenschonenden Ausführung im Hintergrund.<!-- raw HTML omitted --><!-- raw HTML omitted -->Entstanden ist ein Working Prototyp mit Basisfunktionen und bewusst reduziertem UI/UX-Fokus. Details im Public GitHub Repository.
+        Entwicklung eines schlanken, serverlosen Monitoring-Tools auf Basis von Python und GitHub Actions. Die Lösung prüft in konfigurierbaren Intervallen den Status mehrerer Websites und versendet bei einem erkannten Ausfall automatisch eine übersichtliche HTML-E-Mail mit Statusübersicht. Sämtliche Konfiguration, von der zu überwachenden Website-Liste bis zu den E-Mail-Zugangsdaten, wird sicher über GitHub Secrets verwaltet, ohne dass sensible Daten im Code oder Repository sichtbar sind. Besonderes Augenmerk lag auf einer robusten Fehlerbehandlung, sicherer Konfigurationsverwaltung und einer klar strukturierten, gut lesbaren Benachrichtigungs-E-Mail.
       </div>
       
 
@@ -193,27 +193,27 @@
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
           <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 1: Konfiguration</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">Auswahl von Haltestellen und optionalen Linienfiltern über die Benutzeroberfläche</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Hinterlegen der zu überwachenden Websites sowie der E-Mail-Zugangsdaten als GitHub Secrets</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 2: Datenabfrage</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">Abruf der Echtzeit-Abfahrtsdaten über die Wiener-Linien-Open-Data-API</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 2: Zeitgesteuerte Ausführung</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Automatischer Start des Prüflaufs über einen Cron-Zeitplan in GitHub Actions</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 3: Verarbeitung</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">Filterung, Aufbereitung und Priorisierung der relevanten Abfahrten</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 3: Statusprüfung</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Abfrage jeder hinterlegten Website und Auswertung des HTTP-Statuscodes</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 4: Darstellung</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">Anzeige der nächsten Abfahrten in einem kompakten Desktop-Widget</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 4: Aufbereitung</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Zusammenstellung der Ergebnisse in einer übersichtlichen HTML-Tabelle mit Statusanzeige je Website</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 5: Aktualisierung</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">Regelmäßige automatische Aktualisierung der Daten im Hintergrund</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 5: Benachrichtigung</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Versand einer E-Mail ausschließlich bei erkanntem Ausfall, inklusive Zeitstempel und Link zum Repository</div>
         </div>
         
       </div>
@@ -229,23 +229,25 @@
       </h2>
       <div class="flex flex-wrap gap-2">
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">OpenAI</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Claude</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Vibe (Mistral)</span>
         
         <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Python</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">PyInstaller</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Actions</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">WL Open Data API</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Secrets</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">JSON</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">SMTP</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">CSV</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">HTML</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">HTTPS</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">CSS</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Logging</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Cron</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Threading</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Git</span>
         
       </div>
     </section>
@@ -267,32 +269,32 @@
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Datenaufbereitung</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Öffentliche APIs liefern selten Daten in einer Form, die unmittelbar für Endanwender geeignet ist. Ein wesentlicher Teil der Arbeit bestand in der Aufbereitung, Filterung und nutzerfreundlichen Darstellung der Daten.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Konfiguration ohne Code</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Die konsequente Trennung von Code und Konfiguration über GitHub Secrets ermöglicht Anpassungen (Website-Liste, Intervall, Empfänger) ohne jeden Eingriff in den Quellcode.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Vibe-Coding</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Die Entwicklung mit KI-gestützten Coding-Tools (hier OpenAI) beschleunigt die Umsetzung erheblich, erfordert aber weiterhin menschliche Kontrolle bei Architekturentscheidungen, Debugging und Qualitätssicherung.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Iterative Fehlerbehebung</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Fehler wie eingebettete Zeilenumbrüche in Secrets oder E-Mail-Header-Probleme zeigten, wie wichtig defensives Parsing und Bereinigung von Eingabedaten ist, auch bei scheinbar einfachen Skripten.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Benutzerfreundlichkeit</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Benutzerfreundlichkeit entsteht oft durch viele kleine Details. Funktionen wie Stationssuche, Linienfilter, automatische Aktualisierung, System-Tray-Integration und UX/UI haben einen größeren Einfluss auf den praktischen Nutzen als die eigentliche Datenabfrage.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Sicherheitsbewusstsein</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Ein externes Security-Audit deckte auf, dass auch kleine Tools von grundlegenden Sicherheitsprinzipien profitieren, etwa korrektes URL-Parsing, HTML-Escaping und explizite TLS-Zertifikatsprüfung.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Architektur</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Bereits einfache Prototypen profitieren von einer modularen Architektur, da Erweiterungen und Wartung dadurch deutlich erleichtert werden. Erst recht bei Vibe-Coding!</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Serverlose Architektur</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">GitHub Actions eignet sich auch für wiederkehrende Hintergrundaufgaben abseits von CI/CD, wodurch für private Projekte dieser Größenordnung keine eigene Serverinfrastruktur nötig ist.</p>
         </div>
       </div>
       
@@ -306,11 +308,7 @@
   
     
   
-    
-  
-    
-  
-  <section class="mb-10" x-data='{ open: false, index: 0, images: [&#34;/selected-projects/images/wien-ticker/WT_scrsht1.png&#34;,&#34;/selected-projects/images/wien-ticker/WT_scrsht2.png.png&#34;,&#34;/selected-projects/images/wien-ticker/WT_scrsht3.jpg&#34;] }' @keydown.escape.window="open = false" @keydown.arrow-left.window="if (open) index = (index - 1 + images.length) % images.length" @keydown.arrow-right.window="if (open) index = (index + 1) % images.length">
+  <section class="mb-10" x-data='{ open: false, index: 0, images: [&#34;/selected-projects/images/uptime-monitor/uptime_mail.jpg&#34;] }' @keydown.escape.window="open = false" @keydown.arrow-left.window="if (open) index = (index - 1 + images.length) % images.length" @keydown.arrow-right.window="if (open) index = (index + 1) % images.length">
     <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
       <ion-icon name="eye-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
       Screenshots &amp; Interface
@@ -319,15 +317,7 @@
     <div class="flex flex-wrap gap-4">
       
       <button type="button" @click="open = true; index = 0" class="cursor-zoom-in">
-        <img src="/selected-projects/images/wien-ticker/WT_scrsht1.png" alt="Uptime Monitor Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
-      </button>
-      
-      <button type="button" @click="open = true; index = 1" class="cursor-zoom-in">
-        <img src="/selected-projects/images/wien-ticker/WT_scrsht2.png.png" alt="Uptime Monitor Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
-      </button>
-      
-      <button type="button" @click="open = true; index = 2" class="cursor-zoom-in">
-        <img src="/selected-projects/images/wien-ticker/WT_scrsht3.jpg" alt="Uptime Monitor Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
+        <img src="/selected-projects/images/uptime-monitor/uptime_mail.jpg" alt="Uptime Monitor Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
       </button>
       
     </div>
@@ -370,32 +360,48 @@
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Caching</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Lokales Caching zur Reduktion von API-Anfragen.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Statuswechsel-Logik</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Benachrichtigung nur bei Statusänderung (up→down, down→up) statt bei jedem Prüflauf während eines andauernden Ausfalls.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Installer</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Packaging und Installer für Windows.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Alternative Benachrichtigungskanäle</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Integration von Slack- oder Discord-Webhooks als Alternative oder Ergänzung zur E-Mail-Benachrichtigung.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Notifications</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Individuelle Benachrichtigungen bei Verspätungen oder Betriebsstörungen.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Erweiterte Statuslogik</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Berücksichtigung von Antwortzeiten und historischer Verfügbarkeit, nicht nur des reinen Erreichbarkeitsstatus.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Weitere Verkehrsmittel</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Integration weiterer Verkehrsmittel (ÖBB, Badner Bahn, Sharing-Angebote, usw.).</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">SSL-Zertifikatsprüfung</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Warnung, wenn das SSL-Zertifikat einer überwachten Website in Kürze abläuft, ein häufiger, leicht vermeidbarer Ausfallgrund.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">05</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Verlaufsprotokoll</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Einfaches Logging der Prüfergebnisse in eine Datei oder ein GitHub-Issue, um über Zeit nachvollziehen zu können, wie oft und wann eine Website ausgefallen war.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">06</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Individuelle Prüfintervalle pro Website</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Manche Seiten sind kritischer als andere, dafür könnten unterschiedliche Prüffrequenzen sinnvoll sein statt eines globalen Intervalls für alle.</p>
         </div>
       </div>
       
