@@ -3,13 +3,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bkubinszky.github.io/selected-projects/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/css/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/github-actions/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/github-secrets/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/html/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/python/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/smtp/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/tags/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/posts/uptime-monitor/</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/tags/aeo/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/tags/agentic-commerce/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/tags/llm/</loc>
@@ -22,9 +46,6 @@
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/tags/produktdaten/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</loc>
@@ -46,9 +67,6 @@
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/tags/automatisierung/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/python/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/posts/rss-digest/</loc>
