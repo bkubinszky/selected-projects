@@ -109,7 +109,7 @@
   <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
     <div>
       
-        <span class="inline-block bg-blue-600 dark:bg-blue-700 text-white text-xs font-mono uppercase tracking-wide px-3 py-1 rounded mb-4">Automated AI Workflow</span>
+        <span class="inline-block bg-blue-600 dark:bg-blue-700 text-white text-xs font-mono uppercase tracking-wide px-3 py-1 rounded mb-4">Marketing Automation / Generative AI</span>
       
       <h1 class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-gray-100">AI Content Engine</h1>
     </div>
@@ -124,24 +124,17 @@
       
       <div class="relative group text-center">
         <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400">Status</div>
-        <div class="inline-block font-bold text-gray-900 dark:text-gray-100 cursor-help border-b border-dotted [border-bottom-style:dotted] border-gray-400 dark:border-gray-500">MVP</div>
+        <div class="inline-block font-bold text-gray-900 dark:text-gray-100 cursor-help border-b border-dotted [border-bottom-style:dotted] border-gray-400 dark:border-gray-500">WT</div>
         
         <div class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30">
           <div class="bg-gray-900 dark:bg-gray-700 text-white text-xs rounded-lg px-3 py-2 leading-relaxed">
-            Erste funktionierende Version, die bereits produktiv läuft und laufend erweitert wird.
+            Working Theory: vorläufige Annahme, die als Ausgangspunkt für weitere Untersuchungen dient.
           </div>
           <div class="w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45 absolute left-1/2 -translate-x-1/2 -bottom-1"></div>
         </div>
         
       </div>
       
-      
-      <div class="flex flex-col items-center">
-        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">GitHub</div>
-        <a href="https://github.com/bkubinszky/rss-digest" target="_blank" rel="noopener noreferrer" class="inline-flex text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
-          <ion-icon name="link-outline" class="text-xl"></ion-icon>
-        </a>
-      </div>
       
     </div>
   </div>
@@ -156,7 +149,7 @@
 
     
     <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-4">
-      Wir verbringen viel zu viel Zeit damit, für uns relevante Nachrichten aus der Flut an Informationen herauszufiltern. Ziel dieses Projekts war die Entwicklung eines autonomen Systems zur Aggregation einer Vielzahl von RSS-Feeds, zur inhaltlichen Bewertung anhand vordefinierter Kriterien sowie zur strukturierten Aufbereitung der wichtigsten Erkenntnisse.
+      Marketingteams erstellen Produkttexte, Kampagnen-Assets und Kanalvarianten heute größtenteils manuell, obwohl die zugrunde liegenden Produktdaten bereits strukturiert in PIM-Systemen vorliegen. Das führt zu Redundanz, langsamen Time-to-Market-Zyklen und inkonsistenter Tonalität über Kanäle hinweg. Gleichzeitig bleibt das Potenzial von Generative AI ungenutzt, solange sie nicht direkt an die bestehende Produktdatenbasis angebunden ist.
     </div>
     
 
@@ -165,17 +158,17 @@
       
       <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
         <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
-        <span>Laufende manuelle Sichtung der Quellen entfällt vollständig.</span>
+        <span>Single Source of Truth anstatt Redundanzen.</span>
       </li>
       
       <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
         <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
-        <span>Nur relevante Informationen statt Informationsüberlastung.</span>
+        <span>Konsistenter Auftritt über Kanäle hinweg.</span>
       </li>
       
       <li class="flex items-start gap-2 text-gray-700 dark:text-gray-300">
         <span class="text-blue-600 dark:text-blue-400 mt-0.5">&rarr;</span>
-        <span>More signal, less noise.</span>
+        <span>Mitarbeiterentlastung.</span>
       </li>
       
     </ul>
@@ -184,7 +177,7 @@
     
     <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
       <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">Zielsetzung</div>
-      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;Reduzierung der täglichen Recherchezeit bei gleichzeitiger Erhöhung der Informationstiefe durch LLM-gestützte Analyse. Fokus auf die relevantesten Artikel statt auf die manuelle Sichtung großer Informationsmengen.&rdquo;</p>
+      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;Entwicklung einer Content Engine, die PIM-Daten als Single Source of Truth nutzt, um automatisiert kanalspezifische Marketingtexte, Produktbeschreibungen und Kampagnen-Varianten mittels Generative AI zu erzeugen, zu prüfen und auszuspielen.&rdquo;</p>
     </div>
     
   </section>
@@ -203,7 +196,9 @@
 
       
       <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-8">
-        Implementierung einer vollautomatischen, modularen News-Pipeline. Die Python-basierte Lösung wurde mit Claude Code unter Einhaltung verschiedener Security Best Practices aufgesetzt, so dass sensible Daten, Zugangsdaten, persönliche Präferenzen usw. nicht veröffentlicht werden. Das Script kann an jede beliebige LLM API angebunden werden. Ich habe Gemini als Basis und Groq als Fallback verwendet, beide im Free-Tier-Bereich.
+        <p>Dieses Projekt befindet sich derzeit in der Ideation-Phase, in der bestehende PIM-zu-Content-Ansätze recherchiert und die Machbarkeit einzelner Teilschritte anhand kleinerer Tests geprüft wird.</p>
+<p><strong>Working Theory</strong>: Aufbau eines prototypischen Pipelines, die Produktdaten aus einem PIM-System ausliest, um Marketing-relevante Attribute anreichert und daraus über LLM-Prompting kanalspezifische Content-Varianten (Onlineshop, Newsletter, Social, Marktplätze) generiert. Ein Review-Layer stellt sicher, dass generierte Inhalte vor Veröffentlichung markenkonform geprüft werden.</p>
+
       </div>
       
 
@@ -211,28 +206,28 @@
       <div class="grid sm:grid-cols-2 gap-4">
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 1: Configuration</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">RSS Feedlist &amp; persönliche Interessen definieren</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 1: PIM-Anbindung</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Extraktion strukturierter Produktattribute (technische Daten, Kategorien, Varianten) über PIM-Schnittstelle</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 2: Fetching</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">GitHub Actions &amp; Cron gesteuertes Auslesen der Feeds</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 2: Content-Mapping</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Definition, welche Attribute für welchen Kanal relevant sind (z. B. technische Specs für B2B, emotionale Benefits für Social)</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 3: Analysis</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">KI-gestütztes Filtern und Bewerten der Artikel</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 3: Generative Content-Erstellung</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Kanalspezifisches Prompting zur Generierung von Produkttexten, Kampagnen-Snippets und Varianten in unterschiedlicher Tonalität</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 4: Summary (optional)</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">KI-gestützte Zusammenfassung</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 4: Qualitäts- &amp; Markencheck</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Automatisierte Prüfung auf Markenrichtlinien, Tonalität und Faktentreue vor Freigabe, mit Human-in-the-Loop-Option für kritische Inhalte</div>
         </div>
         
         <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 5: Compilation</div>
-          <div class="font-bold text-gray-900 dark:text-gray-100">E-Mail mit Output</div>
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Schritt 5: Ausspielung &amp; Feedback-Loop</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Bereitstellung der Inhalte an CMS/Shop/Kanäle, Erfassung von Performance-Daten zur Optimierung künftiger Prompts</div>
         </div>
         
       </div>
@@ -248,23 +243,21 @@
       </h2>
       <div class="flex flex-wrap gap-2">
         
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">OpenAI</span>
+        
         <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Claude</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Python</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">JSON</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Actions</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">REST-API</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Cron</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">PIM</span>
         
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Secrets</span>
-        
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">HTML/CSS</span>
-        
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Groq API</span>
-        
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Gemini API</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">CMS</span>
         
         <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Markdown</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">...</span>
         
       </div>
     </section>
@@ -286,40 +279,32 @@
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Architektur</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Monolithischen Code früh in Module aufteilen zahlt sich bei späteren Änderungen aus.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Ideation Phase</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Dieses Projekt befindet sich derzeit in der Ideation-Phase, die hier präsentierten Themen und Daten dienen als konzeptionelle Grundlage und sich keine finalen Ergebnisse.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Git</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Sauberes Branching auch bei kleinen Projekten spart viel Mühe.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Datenqualität als Flaschenhals</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Die Qualität generierter Inhalte hängt direkt von der Vollständigkeit und Konsistenz der PIM-Daten ab. Lückenhafte oder uneinheitliche Attribute im PIM schlagen sich unmittelbar in schwacher Content-Qualität nieder.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Mock Mode</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Auch das großzügigste Free Tier ist beim Testen schnell aufgebraucht, deshalb von Anfang an mit Mock Mode arbeiten.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Tonalität ist kein Nebenprodukt</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Einheitliche Markensprache über viele generierte Varianten hinweg zu halten, ist deutlich aufwändiger als die reine Textgenerierung selbst. Ohne klare Prompt-Guidelines und Review-Layer driftet die Tonalität schnell.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Security</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Ein Security Audit durch ein zweites LLM am Ende war überraschend wertvoll und hat echte Findings gebracht.</p>
-        </div>
-      </div>
-      
-      <div class="flex gap-3">
-        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">05</div>
-        <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Nutzen</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Weniger ist mehr: v4 ohne Summaries ist schneller, günstiger, und in den meisten Fällen genauso nützlich wie v3 mit Summaries.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Skalierung ≠ Automatisierung ohne Kontrolle</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Vollautomatische Ausspielung ist für risikoarme Inhalte (z. B. Attributslisten) sinnvoll, für kampagnenkritische Texte bleibt ein Human-in-the-Loop-Schritt vorerst notwendig - auch in Hinsicht auf Kennzeichnungspflichten aus dem AI Act.</p>
         </div>
       </div>
       
@@ -328,48 +313,6 @@
   
 
   
-  
-  
-  
-    
-  
-  <section class="mb-10" x-data='{ open: false, index: 0, images: [&#34;/selected-projects/images/rss-digest/RSS_scrsht1.jpg&#34;] }' @keydown.escape.window="open = false" @keydown.arrow-left.window="if (open) index = (index - 1 + images.length) % images.length" @keydown.arrow-right.window="if (open) index = (index + 1) % images.length">
-    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
-      <ion-icon name="eye-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
-      Screenshots &amp; Interface
-    </h2>
-    <hr class="border-gray-200 dark:border-gray-700 mb-6">
-    <div class="flex flex-wrap gap-4">
-      
-      <button type="button" @click="open = true; index = 0" class="cursor-zoom-in">
-        <img src="/selected-projects/images/rss-digest/RSS_scrsht1.jpg" alt="AI Content Engine Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
-      </button>
-      
-    </div>
-
-    <div
-      x-show="open"
-      x-transition.opacity
-      @click="open = false"
-      class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6 md:p-16 cursor-zoom-out"
-      style="display: none;"
-    >
-      <img :src="images[index]" class="max-w-3xl max-h-[75vh] w-auto h-auto rounded-lg cursor-default" @click.stop>
-
-      <button type="button" @click.stop="index = (index - 1 + images.length) % images.length" x-show="images.length > 1" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-      </button>
-      <button type="button" @click.stop="index = (index + 1) % images.length" x-show="images.length > 1" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-      </button>
-
-      <button type="button" @click.stop="open = false" class="absolute top-4 right-4 md:top-6 md:right-6 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div x-show="images.length > 1" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm font-mono" x-text="(index + 1) + ' / ' + images.length"></div>
-    </div>
-  </section>
   
 
   
@@ -385,56 +328,40 @@
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Keyword watchlist</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Bestimmte Begriffe (Firmenname, Technologie, Person) boosten den Score automatisch. Praktisch wenn man spezifische Themen eng verfolgen will.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Ideation Phase</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Dieses Projekt befindet sich derzeit in der Ideation-Phase, die hier präsentierten Themen und Daten dienen als konzeptionelle Grundlage und sich keine finalen Ergebnisse.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Blacklist</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Hard-Filter für bestimmte Themen per Blacklist einstellen.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Content-Performance als Feedback-Signal</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Automatische Rückkopplung von Klick-, Conversion- und Engagement-Daten in die Prompt-Optimierung, um Content-Varianten datengetrieben zu verbessern.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Newsletter Integration</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Datenquellen neben RSS-Kanälen mit Newslettern ergänzen (z.B. via Kill-the-Newsletter).</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Multi-PIM- &amp; Multi-Brand-Fähigkeit</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Erweiterung auf mehrere PIM-Instanzen und Marken, um die Engine als zentralen Content-Hub für ein Markenportfolio nutzbar zu machen.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Personalisiertes Scoring</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Statt einem globalen Interesse-Profil könnte man pro Feed unterschiedliche Gewichtungen setzen.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Lokalisierung &amp; Mehrsprachigkeit</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Automatisierte, kulturell angepasste Übersetzung generierter Inhalte für internationale Märkte statt reiner 1:1-Übersetzung.</p>
         </div>
       </div>
       
       <div class="flex gap-3">
         <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">05</div>
         <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Feedback Loop</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Einfache Like/Dislike Buttons pro Artikel in der Mail, der einen Score in einer lokalen Datei speichert. Über Zeit lernt das System die eigenen Präferenzen.</p>
-        </div>
-      </div>
-      
-      <div class="flex gap-3">
-        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">06</div>
-        <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Weitere Output Kanäle</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Telegram, Whatsapp, Slack, Teams u.ä. anstatt E-Mail Versand.</p>
-        </div>
-      </div>
-      
-      <div class="flex gap-3">
-        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">07</div>
-        <div>
-          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Lokale KI</div>
-          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">LLM-APIs könnten durch eine lokale KI ersetzt werden.</p>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Governance &amp; Compliance-Layer</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Ausbau des Review-Layers zu einem vollständigen Freigabe-Workflow inkl. Audit-Trail, insbesondere für regulierte Branchen oder Werbeaussagen mit rechtlicher Relevanz.</p>
         </div>
       </div>
       

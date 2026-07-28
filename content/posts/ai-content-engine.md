@@ -1,78 +1,74 @@
 ---
 title: "AI Content Engine"
-preview: true
+preview: false
 date: 2026-02-15
-order: 40
+order: 31
 icon: "color-wand-outline"
-category: "Automated AI Workflow"
-status: "MVP"
-status_note: "Erste funktionierende Version, die bereits produktiv läuft und laufend erweitert wird."
-github: "https://github.com/bkubinszky/rss-digest"
-tags: ["Content", "MarTech", "LLM", "API"]
+category: "Marketing Automation / Generative AI"
+status: "WT"
+status_note: "Working Theory: vorläufige Annahme, die als Ausgangspunkt für weitere Untersuchungen dient."
+github: 
+tags: ["Content", "MarTech", "LLM", "API", "..."]
 description: "Skalierbare Marketing-Automation durch Integration von PIM-Systemen und Generative AI"
 
 problem:
-  intro: "Wir verbringen viel zu viel Zeit damit, für uns relevante Nachrichten aus der Flut an Informationen herauszufiltern. Ziel dieses Projekts war die Entwicklung eines autonomen Systems zur Aggregation einer Vielzahl von RSS-Feeds, zur inhaltlichen Bewertung anhand vordefinierter Kriterien sowie zur strukturierten Aufbereitung der wichtigsten Erkenntnisse."
+  intro: "Marketingteams erstellen Produkttexte, Kampagnen-Assets und Kanalvarianten heute größtenteils manuell, obwohl die zugrunde liegenden Produktdaten bereits strukturiert in PIM-Systemen vorliegen. Das führt zu Redundanz, langsamen Time-to-Market-Zyklen und inkonsistenter Tonalität über Kanäle hinweg. Gleichzeitig bleibt das Potenzial von Generative AI ungenutzt, solange sie nicht direkt an die bestehende Produktdatenbasis angebunden ist."
   points:
-    - "Laufende manuelle Sichtung der Quellen entfällt vollständig."
-    - "Nur relevante Informationen statt Informationsüberlastung."
-    - "More signal, less noise."
+    - "Single Source of Truth anstatt Redundanzen."
+    - "Konsistenter Auftritt über Kanäle hinweg."
+    - "Mitarbeiterentlastung."
   quote_label: "Zielsetzung"
-  quote: "Reduzierung der täglichen Recherchezeit bei gleichzeitiger Erhöhung der Informationstiefe durch LLM-gestützte Analyse. Fokus auf die relevantesten Artikel statt auf die manuelle Sichtung großer Informationsmengen."
+  quote: Entwicklung einer Content Engine, die PIM-Daten als Single Source of Truth nutzt, um automatisiert kanalspezifische Marketingtexte, Produktbeschreibungen und Kampagnen-Varianten mittels Generative AI zu erzeugen, zu prüfen und auszuspielen.
 
 workflow:
-  intro: "Implementierung einer vollautomatischen, modularen News-Pipeline. Die Python-basierte Lösung wurde mit Claude Code unter Einhaltung verschiedener Security Best Practices aufgesetzt, so dass sensible Daten, Zugangsdaten, persönliche Präferenzen usw. nicht veröffentlicht werden. Das Script kann an jede beliebige LLM API angebunden werden. Ich habe Gemini als Basis und Groq als Fallback verwendet, beide im Free-Tier-Bereich."
+  intro: | 
+   Dieses Projekt befindet sich derzeit in der Ideation-Phase, in der bestehende PIM-zu-Content-Ansätze recherchiert und die Machbarkeit einzelner Teilschritte anhand kleinerer Tests geprüft wird. 
+
+
+   **Working Theory**: Aufbau eines prototypischen Pipelines, die Produktdaten aus einem PIM-System ausliest, um Marketing-relevante Attribute anreichert und daraus über LLM-Prompting kanalspezifische Content-Varianten (Onlineshop, Newsletter, Social, Marktplätze) generiert. Ein Review-Layer stellt sicher, dass generierte Inhalte vor Veröffentlichung markenkonform geprüft werden.
   steps:
-    - label: "Schritt 1: Configuration"
-      title: "RSS Feedlist & persönliche Interessen definieren"
-    - label: "Schritt 2: Fetching"
-      title: "GitHub Actions & Cron gesteuertes Auslesen der Feeds"
-    - label: "Schritt 3: Analysis"
-      title: "KI-gestütztes Filtern und Bewerten der Artikel"
-    - label: "Schritt 4: Summary (optional)"
-      title: "KI-gestützte Zusammenfassung"
-    - label: "Schritt 5: Compilation"
-      title: "E-Mail mit Output"
+    - label: "Schritt 1: PIM-Anbindung"
+      title: "Extraktion strukturierter Produktattribute (technische Daten, Kategorien, Varianten) über PIM-Schnittstelle"
+    - label: "Schritt 2: Content-Mapping"
+      title: "Definition, welche Attribute für welchen Kanal relevant sind (z. B. technische Specs für B2B, emotionale Benefits für Social)"
+    - label: "Schritt 3: Generative Content-Erstellung"
+      title: "Kanalspezifisches Prompting zur Generierung von Produkttexten, Kampagnen-Snippets und Varianten in unterschiedlicher Tonalität"
+    - label: "Schritt 4: Qualitäts- & Markencheck"
+      title: "Automatisierte Prüfung auf Markenrichtlinien, Tonalität und Faktentreue vor Freigabe, mit Human-in-the-Loop-Option für kritische Inhalte"
+    - label: "Schritt 5: Ausspielung & Feedback-Loop"
+      title: "Bereitstellung der Inhalte an CMS/Shop/Kanäle, Erfassung von Performance-Daten zur Optimierung künftiger Prompts"
 
 stack:
+  - "OpenAI"
   - "Claude"
-  - "Python"
-  - "GitHub Actions"
-  - "GitHub Cron"
-  - "GitHub Secrets"
-  - "HTML/CSS"
-  - "Groq API"
-  - "Gemini API"
+  - "JSON"
+  - "REST-API"
+  - "PIM"
+  - "CMS"
   - "Markdown"
+  - "..."
 
 learnings:
-  - title: "Architektur"
-    text: "Monolithischen Code früh in Module aufteilen zahlt sich bei späteren Änderungen aus."
-  - title: "Git"
-    text: "Sauberes Branching auch bei kleinen Projekten spart viel Mühe."
-  - title: "Mock Mode"
-    text: "Auch das großzügigste Free Tier ist beim Testen schnell aufgebraucht, deshalb von Anfang an mit Mock Mode arbeiten."
-  - title: "Security"
-    text: "Ein Security Audit durch ein zweites LLM am Ende war überraschend wertvoll und hat echte Findings gebracht."
-  - title: "Nutzen"
-    text: "Weniger ist mehr: v4 ohne Summaries ist schneller, günstiger, und in den meisten Fällen genauso nützlich wie v3 mit Summaries."
+  - title: "Ideation Phase"
+    text: "Dieses Projekt befindet sich derzeit in der Ideation-Phase, die hier präsentierten Themen und Daten dienen als konzeptionelle Grundlage und sich keine finalen Ergebnisse."
+  - title: "Datenqualität als Flaschenhals"
+    text: "Die Qualität generierter Inhalte hängt direkt von der Vollständigkeit und Konsistenz der PIM-Daten ab. Lückenhafte oder uneinheitliche Attribute im PIM schlagen sich unmittelbar in schwacher Content-Qualität nieder."
+  - title: "Tonalität ist kein Nebenprodukt"
+    text: "Einheitliche Markensprache über viele generierte Varianten hinweg zu halten, ist deutlich aufwändiger als die reine Textgenerierung selbst. Ohne klare Prompt-Guidelines und Review-Layer driftet die Tonalität schnell."
+  - title: "Skalierung ≠ Automatisierung ohne Kontrolle"
+    text: "Vollautomatische Ausspielung ist für risikoarme Inhalte (z. B. Attributslisten) sinnvoll, für kampagnenkritische Texte bleibt ein Human-in-the-Loop-Schritt vorerst notwendig - auch in Hinsicht auf Kennzeichnungspflichten aus dem AI Act."
 
 screenshots:
-  - "/images/rss-digest/RSS_scrsht1.jpg"
-
+  
 future_ideas:
-  - title: "Keyword watchlist"
-    text: "Bestimmte Begriffe (Firmenname, Technologie, Person) boosten den Score automatisch. Praktisch wenn man spezifische Themen eng verfolgen will."
-  - title: "Blacklist"
-    text: "Hard-Filter für bestimmte Themen per Blacklist einstellen."
-  - title: "Newsletter Integration"
-    text: "Datenquellen neben RSS-Kanälen mit Newslettern ergänzen (z.B. via Kill-the-Newsletter)."
-  - title: "Personalisiertes Scoring"
-    text: "Statt einem globalen Interesse-Profil könnte man pro Feed unterschiedliche Gewichtungen setzen."
-  - title: "Feedback Loop"
-    text: "Einfache Like/Dislike Buttons pro Artikel in der Mail, der einen Score in einer lokalen Datei speichert. Über Zeit lernt das System die eigenen Präferenzen."
-  - title: "Weitere Output Kanäle"
-    text: "Telegram, Whatsapp, Slack, Teams u.ä. anstatt E-Mail Versand."
-  - title: "Lokale KI"
-    text: "LLM-APIs könnten durch eine lokale KI ersetzt werden."
+  - title: "Ideation Phase"
+    text: "Dieses Projekt befindet sich derzeit in der Ideation-Phase, die hier präsentierten Themen und Daten dienen als konzeptionelle Grundlage und sich keine finalen Ergebnisse."
+  - title: "Content-Performance als Feedback-Signal"
+    text: "Automatische Rückkopplung von Klick-, Conversion- und Engagement-Daten in die Prompt-Optimierung, um Content-Varianten datengetrieben zu verbessern."
+  - title: "Multi-PIM- & Multi-Brand-Fähigkeit"
+    text: "Erweiterung auf mehrere PIM-Instanzen und Marken, um die Engine als zentralen Content-Hub für ein Markenportfolio nutzbar zu machen."
+  - title: "Lokalisierung & Mehrsprachigkeit"
+    text: "Automatisierte, kulturell angepasste Übersetzung generierter Inhalte für internationale Märkte statt reiner 1:1-Übersetzung."
+  - title: "Governance & Compliance-Layer"
+    text: "Ausbau des Review-Layers zu einem vollständigen Freigabe-Workflow inkl. Audit-Trail, insbesondere für regulierte Branchen oder Werbeaussagen mit rechtlicher Relevanz."
 ---
