@@ -23,7 +23,7 @@
       {{ end }}
     </h3>
 
-    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+    <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-relaxed mb-6">
       {{ if isset .Params "description" | and (ne .Params.description "") -}}
         {{ .Description | markdownify }}
       {{- else -}}
