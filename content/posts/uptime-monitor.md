@@ -8,7 +8,7 @@ category: "Website Uptime Monitoring"
 status: "WPT"
 status_note: "Working Prototype: das erste funktionstüchtige Modell eines Produkts."
 github: "https://github.com/bkubinszky/uptime-monitoring"
-tags: ["GitHub Actions", "Python", "Https", "LLM", "API"]
+tags: ["GitHub Actions", "GitHub Secrets", "Python", "SMTP", "HTML", "CSS"]
 description: "Ein Python-Projekt zur Überwachung der Verfügbarkeit von Websites über GitHub Actions und zum Versenden von E-Mail-Benachrichtigungen, falls eine Website ausfällt."
 
 problem:
