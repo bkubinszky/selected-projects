@@ -44,7 +44,7 @@
 
   {{/* ---------- Problemstellung & Ziel ---------- */}}
   {{ with .Params.problem }}
-  <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8 mb-8">
+  <section class="bg-slate-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8 mb-8">
     <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
       <ion-icon name="information-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
       {{ T "single_problem_heading" }}
@@ -68,7 +68,7 @@
     {{ end }}
 
     {{ with .quote }}
-    <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
+    <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-100 dark:bg-blue-900/20 rounded-r-lg p-5">
       <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">{{ $.Params.problem.quote_label | default (T "single_quote_label_default") }}</div>
       <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;{{ (. | markdownify | replaceRE "^<p>" "" | replaceRE "</p>\n?$" "") | safeHTML }}&rdquo;</p>
     </div>
@@ -81,7 +81,7 @@
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
 
     {{ with .Params.workflow }}
-    <section class="lg:col-span-2 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+    <section class="lg:col-span-2 bg-slate-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
       <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
         <ion-icon name="git-network-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
         {{ T "single_workflow_heading" }}
@@ -96,7 +96,7 @@
       {{ with .steps }}
       <div class="grid sm:grid-cols-2 gap-4">
         {{ range . }}
-        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+        <div class="bg-blue-100 dark:bg-blue-900/20 rounded-lg p-4">
           {{ with .label }}<div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">{{ . }}</div>{{ end }}
           <div class="font-bold text-gray-900 dark:text-gray-100">{{ .title }}</div>
         </div>
@@ -107,14 +107,14 @@
     {{ end }}
 
     {{ with .Params.stack }}
-    <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+    <section class="bg-slate-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
       <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
         <ion-icon name="terminal-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
         {{ T "single_stack_heading" }}
       </h2>
       <div class="flex flex-wrap gap-2">
         {{ range . }}
-        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">{{ . }}</span>
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">{{ . }}</span>
         {{ end }}
       </div>
     </section>
