@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de-de" dir="ltr">
-<head>
+<head><script src="/selected-projects/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=selected-projects/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><style>[x-cloak] { display: none !important; }</style><script>
   (function() {
@@ -9,10 +9,10 @@
   })();
 </script>
 <title>Categories | Balázs Kubinszky</title>
-<link rel="icon" type="image/png" href="https://bkubinszky.github.io/selected-projects/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="https://bkubinszky.github.io/selected-projects/favicon.svg" />
-<link rel="shortcut icon" href="https://bkubinszky.github.io/selected-projects/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="https://bkubinszky.github.io/selected-projects/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="http://localhost:1313/selected-projects/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/selected-projects/favicon.svg" />
+<link rel="shortcut icon" href="http://localhost:1313/selected-projects/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/selected-projects/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Balázs Kubinszky" />
 
 <meta name="author" content="Balázs Kubinszky">
@@ -22,9 +22,7 @@
   
   
     
-      
-        <link rel="stylesheet" href="/selected-projects/css/main.5dbf53236e18d10e749b6242db102b469a943104149a1a11c051bd3e3225965a.css" integrity="sha256-Xb9TI24Y0Q50m2JC2xArRpqUMQQUmhoRwFG9PjIlllo=" crossorigin="anonymous">
-      
+      <link rel="stylesheet" href="/selected-projects/css/main.css">
     
   
 
@@ -33,9 +31,7 @@
   
   
     
-      
-        <script src="/selected-projects/js/utilities.f000481cc43e98f11bf592fcd2366747b3ceaa3f577a7f14d88af6cbb3608597.js" integrity="sha256-8ABIHMQ&#43;mPEb9ZL80jZnR7POqj9Xen8U2Ir2y7NghZc=" crossorigin="anonymous"></script>
-      
+      <script src="/selected-projects/js/utilities.js"></script>
     
   
 
@@ -51,7 +47,7 @@
     <div class="container mx-auto py-8">
         <div class="flex flex-row justify-between items-center">
             <h1 id="logo">
-                <a href="https://bkubinszky.github.io/selected-projects/" title="Home"
+                <a href="http://localhost:1313/selected-projects/" title="Home"
                    class="text-2xl antialiased font-extrabold hover:text-orange-600 dark:hover:text-orange-400 dark:text-gray-100 transition ease-in-out">Selected Projects</a>
             </h1>
 
@@ -77,6 +73,49 @@
                 </a>
                 
 
+                
+
+<div class="relative" x-data="{ open: false }" @click.outside="open = false" @keydown.escape.window="open = false">
+
+  <button
+    type="button"
+    @click="open = !open"
+    :aria-expanded="open"
+    aria-haspopup="listbox"
+    class="flex items-center justify-center h-9 w-9 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+    title="Sprache wechseln"
+  >
+    <ion-icon name="language-outline" class="text-xl" aria-hidden="true"></ion-icon>
+  </button>
+
+  <ul
+    x-show="open"
+    x-transition:enter="transition ease-out duration-150"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-100"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    class="absolute right-0 mt-2 w-14 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 py-1"
+    role="listbox"
+    x-cloak
+  >
+
+    <li role="option" aria-selected="true">
+      <span class="block px-3 py-1.5 text-sm font-mono uppercase font-bold text-center text-orange-600 dark:text-orange-400">
+        DE
+      </span>
+    </li>
+
+    <li role="option" >
+      <a href="http://localhost:1313/selected-projects/en/categories/"
+         @click="open = false"
+         class="block px-3 py-1.5 text-sm font-mono uppercase text-center text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-gray-50 dark:hover:bg-gray-700 transition ease-in-out">
+        EN
+      </a>
+    </li>
+  </ul>
+</div>
                 <button 
   x-data="{ 
     isDark: document.documentElement.classList.contains('dark'),
@@ -87,15 +126,14 @@
     }
   }"
   @click="toggle()"
-  :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+  :aria-label="isDark ? 'Dunkel / hell' : 'Dunkel / hell'"
   type="button"
   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
-  title="Toggle theme"
+  title="Dunkel / hell"
 >
   <ion-icon x-show="isDark" name="sunny" class="text-xl" aria-hidden="true" x-cloak></ion-icon>
   <ion-icon x-show="!isDark" name="moon" class="text-xl" aria-hidden="true" x-cloak></ion-icon>
 </button>
-
             </div>
         </div>
     </div>

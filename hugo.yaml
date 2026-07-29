@@ -1,8 +1,22 @@
 baseURL: "https://bkubinszky.github.io/selected-projects/"
 publishDir: "docs"
-locale: 'de-de'
 title: 'Balázs Kubinszky'
 theme: 'fortyten'
+
+defaultContentLanguage: de
+defaultContentLanguageInSubdir: false
+
+languages:
+  de:
+    contentDir: content/de
+    label: Deutsch
+    locale: de-de
+    weight: 1
+  en:
+    contentDir: content/en
+    label: English
+    locale: en-us
+    weight: 2
 
 params:
   description: "Ausgewählte Projekte, Experimente und Use Cases"
@@ -24,6 +38,7 @@ build:
       target: css
     - source: '(postcss|tailwind)\.config\.js'
       target: css
+
 module:
   mounts:
     - source: assets

@@ -16,14 +16,14 @@
   {{ end }}
 
   <div class="container mx-auto mt-20 mb-20">
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Ausgewählte Projekte, Experimente & Use Cases</h2>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">{{ T "home_intro_heading" }}</h2>
     <section class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {{ range site.RegularPages.ByParam "order" }}
       {{ partial "post-card.html" . }}
     {{ end }}
       <div class="rounded-2xl border border-gray-100 dark:border-gray-700 p-7 min-h-64 flex flex-col items-center justify-center text-center italic text-gray-400 dark:text-gray-500 gap-2">
         <ion-icon name="hourglass-outline" class="text-3xl not-italic"></ion-icon>
-        Weitere folgen &hellip;
+        {{ T "home_more_coming" }}
       </div>
     </section>
   </div>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Balázs Kubinszky</title>
+		<link>http://localhost:1313/selected-projects/en/tags/</link>
+		<description>Recent content in Tags on Balázs Kubinszky</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+			<managingEditor>balazs.kubinszky@gmail.com (Balázs Kubinszky)</managingEditor>
+		
+		
+			<webMaster>balazs.kubinszky@gmail.com (Balázs Kubinszky)</webMaster>
+		
+		
+		
+			<lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/selected-projects/en/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>CSS</title>
+				<link>http://localhost:1313/selected-projects/en/tags/css/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/css/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GitHub Actions</title>
+				<link>http://localhost:1313/selected-projects/en/tags/github-actions/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/github-actions/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GitHub Secrets</title>
+				<link>http://localhost:1313/selected-projects/en/tags/github-secrets/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/github-secrets/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>HTML</title>
+				<link>http://localhost:1313/selected-projects/en/tags/html/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/html/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>http://localhost:1313/selected-projects/en/tags/python/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/python/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>SMTP</title>
+				<link>http://localhost:1313/selected-projects/en/tags/smtp/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/smtp/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AEO</title>
+				<link>http://localhost:1313/selected-projects/en/tags/aeo/</link>
+				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/aeo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Agentic Commerce</title>
+				<link>http://localhost:1313/selected-projects/en/tags/agentic-commerce/</link>
+				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/agentic-commerce/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>LLM</title>
+				<link>http://localhost:1313/selected-projects/en/tags/llm/</link>
+				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/llm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>PIM</title>
+				<link>http://localhost:1313/selected-projects/en/tags/pim/</link>
+				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/pim/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Product Data</title>
+				<link>http://localhost:1313/selected-projects/en/tags/product-data/</link>
+				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/product-data/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>JSON</title>
+				<link>http://localhost:1313/selected-projects/en/tags/json/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/json/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>LLM-Ready</title>
+				<link>http://localhost:1313/selected-projects/en/tags/llm-ready/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/llm-ready/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Markdown</title>
+				<link>http://localhost:1313/selected-projects/en/tags/markdown/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/markdown/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AI Workflow</title>
+				<link>http://localhost:1313/selected-projects/en/tags/ai-workflow/</link>
+				<pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/ai-workflow/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>API</title>
+				<link>http://localhost:1313/selected-projects/en/tags/api/</link>
+				<pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/api/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Automation</title>
+				<link>http://localhost:1313/selected-projects/en/tags/automation/</link>
+				<pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/automation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>...</title>
+				<link>http://localhost:1313/selected-projects/en/tags/.../</link>
+				<pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/.../</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Content</title>
+				<link>http://localhost:1313/selected-projects/en/tags/content/</link>
+				<pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/content/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>MarTech</title>
+				<link>http://localhost:1313/selected-projects/en/tags/martech/</link>
+				<pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/martech/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Https</title>
+				<link>http://localhost:1313/selected-projects/en/tags/https/</link>
+				<pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/https/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Open Data</title>
+				<link>http://localhost:1313/selected-projects/en/tags/open-data/</link>
+				<pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/tags/open-data/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

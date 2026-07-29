@@ -1,98 +1,18 @@
-
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://bkubinszky.github.io/selected-projects/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/css/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/github-actions/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/github-secrets/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/html/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/python/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/smtp/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/uptime-monitor/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/aeo/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/agentic-commerce/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/llm/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/llm-prodcat/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/pim/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/produktdaten/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/json/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/llm-ready/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/markdown/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/ai-workflow/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/api/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/automatisierung/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/rss-digest/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/.../</loc>
-    <lastmod>2026-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/ai-content-engine/</loc>
-    <lastmod>2026-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/content/</loc>
-    <lastmod>2026-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/martech/</loc>
-    <lastmod>2026-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/https/</loc>
-    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/open-data/</loc>
-    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/wien-ticker/</loc>
-    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/categories/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+		<sitemap>
+			<loc>http://localhost:1313/selected-projects/de/sitemap.xml</loc>
+			
+				<lastmod>2026-07-27T00:00:00+00:00</lastmod>
+			
+		</sitemap>
+	
+		<sitemap>
+			<loc>http://localhost:1313/selected-projects/en/sitemap.xml</loc>
+			
+				<lastmod>2026-07-27T00:00:00+00:00</lastmod>
+			
+		</sitemap>
+	
+</sitemapindex>

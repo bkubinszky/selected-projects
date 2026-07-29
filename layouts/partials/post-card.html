@@ -6,7 +6,7 @@
   {{ end }}
 
   {{ if $isPreview }}
-  <span class="absolute top-7 right-7 z-20 text-xs font-mono uppercase tracking-wide bg-orange-500 text-white px-2 py-1 rounded">In Aufbereitung</span>
+  <span class="absolute top-7 right-7 z-20 text-xs font-mono uppercase tracking-wide bg-orange-500 text-white px-2 py-1 rounded">{{ T "post_card_in_progress" }}</span>
   {{ end }}
 
   <div class="flex flex-col flex-1{{ if $isPreview }} opacity-40 grayscale{{ end }}">

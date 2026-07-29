@@ -1,0 +1,15 @@
+home_intro_heading = "Ausgewählte Projekte, Experimente & Use Cases"
+home_more_coming = "Weitere folgen …"
+
+post_card_in_progress = "In Aufbereitung"
+
+single_date_label = "Datum"
+single_problem_heading = "Problemstellung & Ziel"
+single_quote_label_default = "Zielsetzung"
+single_workflow_heading = "Lösungsansatz & Workflow"
+single_stack_heading = "Technologien & Stack"
+single_future_ideas_heading = "Erweiterungsoptionen & Überlegungen"
+single_back_link = "Zurück"
+
+nav_language_tooltip = "Sprache wechseln"
+nav_theme_tooltip = "Dunkel / hell"

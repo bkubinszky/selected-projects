@@ -50,7 +50,7 @@ stack:
 
 learnings:
   - title: "Ideation Phase"
-    text: "Dieses Projekt befindet sich derzeit in der Ideation-Phase, die hier präsentierten Themen und Daten dienen als konzeptionelle Grundlage und sich keine finalen Ergebnisse."
+    text: "Dieses Projekt befindet sich derzeit in der Ideation-Phase, die hier präsentierten Themen und Daten dienen als konzeptionelle Grundlage und sind keine finalen Ergebnisse."
   - title: "Datenqualität als Flaschenhals"
     text: "Die Qualität generierter Inhalte hängt direkt von der Vollständigkeit und Konsistenz der PIM-Daten ab. Lückenhafte oder uneinheitliche Attribute im PIM schlagen sich unmittelbar in schwacher Content-Qualität nieder."
   - title: "Tonalität ist kein Nebenprodukt"

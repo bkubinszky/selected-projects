@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/selected-projects/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=selected-projects/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>[x-cloak] { display: none !important; }</style><script>
+  (function() {
+    var isDark = localStorage.theme !== 'light';
+    document.documentElement.classList.toggle('dark', isDark);
+  })();
+</script>
+<title>Uptime Monitor | Balázs Kubinszky</title>
+<link rel="icon" type="image/png" href="http://localhost:1313/selected-projects/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/selected-projects/favicon.svg" />
+<link rel="shortcut icon" href="http://localhost:1313/selected-projects/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/selected-projects/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Balázs Kubinszky" />
+
+<meta name="author" content="Balázs Kubinszky">
+<meta name="description" content="Ausgewählte Projekte, Experimente und Use Cases">
+<meta name="keywords" content="Kubinszky, Blog">
+
+  
+  
+    
+      <link rel="stylesheet" href="/selected-projects/css/main.css">
+    
+  
+
+
+
+  
+  
+    
+      <script src="/selected-projects/js/utilities.js"></script>
+    
+  
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.3/dist/cdn.min.js" integrity="sha384-4E5IZutrbnm0GBnBqEA2tgLsTg6ublElJlpE9qQQNL0WrY9g4GPahFyJYwnDet2+" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <header>
+      <header class="pt-4 dark:bg-gray-900" x-data="{}">
+    <div class="container mx-auto py-8">
+        <div class="flex flex-row justify-between items-center">
+            <h1 id="logo">
+                <a href="http://localhost:1313/selected-projects/" title="Home"
+                   class="text-2xl antialiased font-extrabold hover:text-orange-600 dark:hover:text-orange-400 dark:text-gray-100 transition ease-in-out">Selected Projects</a>
+            </h1>
+
+            <div class="flex items-center gap-2">
+                
+                <a href="https://github.com/bkubinszky" target="_blank" rel="noopener noreferrer" title="GitHub"
+                   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <ion-icon name="logo-github" class="text-xl" aria-hidden="true"></ion-icon>
+                </a>
+                
+
+                
+                <a href="https://www.linkedin.com/in/bkub/" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <ion-icon name="logo-linkedin" class="text-xl" aria-hidden="true"></ion-icon>
+                </a>
+                
+
+                
+                <a href="mailto:balazs.kubinszky@gmail.com" title="E-Mail"
+                   class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <ion-icon name="mail-outline" class="text-xl" aria-hidden="true"></ion-icon>
+                </a>
+                
+
+                
+
+<div class="relative" x-data="{ open: false }" @click.outside="open = false" @keydown.escape.window="open = false">
+
+  <button
+    type="button"
+    @click="open = !open"
+    :aria-expanded="open"
+    aria-haspopup="listbox"
+    class="flex items-center justify-center h-9 w-9 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+    title="Switch language"
+  >
+    <ion-icon name="language-outline" class="text-xl" aria-hidden="true"></ion-icon>
+  </button>
+
+  <ul
+    x-show="open"
+    x-transition:enter="transition ease-out duration-150"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-100"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    class="absolute right-0 mt-2 w-14 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 py-1"
+    role="listbox"
+    x-cloak
+  >
+
+    <li role="option" >
+      <a href="http://localhost:1313/selected-projects/posts/uptime-monitor/"
+         @click="open = false"
+         class="block px-3 py-1.5 text-sm font-mono uppercase text-center text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-gray-50 dark:hover:bg-gray-700 transition ease-in-out">
+        DE
+      </a>
+    </li>
+
+    <li role="option" aria-selected="true">
+      <span class="block px-3 py-1.5 text-sm font-mono uppercase font-bold text-center text-orange-600 dark:text-orange-400">
+        EN
+      </span>
+    </li>
+  </ul>
+</div>
+                <button 
+  x-data="{ 
+    isDark: document.documentElement.classList.contains('dark'),
+    toggle() {
+      this.isDark = !this.isDark;
+      document.documentElement.classList.toggle('dark', this.isDark);
+      localStorage.theme = this.isDark ? 'dark' : 'light';
+    }
+  }"
+  @click="toggle()"
+  :aria-label="isDark ? 'Dark / light mode' : 'Dark / light mode'"
+  type="button"
+  class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+  title="Dark / light mode"
+>
+  <ion-icon x-show="isDark" name="sunny" class="text-xl" aria-hidden="true" x-cloak></ion-icon>
+  <ion-icon x-show="!isDark" name="moon" class="text-xl" aria-hidden="true" x-cloak></ion-icon>
+</button>
+            </div>
+        </div>
+    </div>
+</header>
+    </header>
+    <main>
+      
+<div class="container mx-auto max-w-5xl px-4 py-10">
+
+  
+  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
+    <div>
+      
+        <span class="inline-block bg-blue-600 dark:bg-blue-700 text-white text-xs font-mono uppercase tracking-wide px-3 py-1 rounded mb-4">Website Uptime Monitoring</span>
+      
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-gray-100">Uptime Monitor</h1>
+    </div>
+
+    <div class="flex gap-8 shrink-0">
+      
+      <div class="text-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400">Date</div>
+        <div class="font-bold text-gray-900 dark:text-gray-100">2026</div>
+      </div>
+      
+      
+      <div class="relative group text-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400">Status</div>
+        <div class="inline-block font-bold text-gray-900 dark:text-gray-100 cursor-help border-b border-dotted [border-bottom-style:dotted] border-gray-400 dark:border-gray-500">WPT</div>
+        
+        <div class="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30">
+          <div class="bg-gray-900 dark:bg-gray-700 text-white text-xs rounded-lg px-3 py-2 leading-relaxed">
+            Working Prototype: the first functional model of a product.
+          </div>
+          <div class="w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45 absolute left-1/2 -translate-x-1/2 -bottom-1"></div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="flex flex-col items-center">
+        <div class="text-xs font-mono uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">GitHub</div>
+        <a href="https://github.com/bkubinszky/uptime-monitoring" target="_blank" rel="noopener noreferrer" class="inline-flex text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
+          <ion-icon name="link-outline" class="text-xl"></ion-icon>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  
+  <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8 mb-8">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="information-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Problem statement &amp; Goal
+    </h2>
+
+    
+    <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-4">
+      Websites and services can go offline at any time, often without anyone noticing until users encounter the issue themselves. Without dedicated server infrastructure or paid monitoring services, an outage can remain undetected for an extended period. The Uptime Monitor solves this problem with a free, serverless solution that runs entirely on existing GitHub infrastructure and automatically sends an email as soon as a monitored service becomes unavailable.
+    </div>
+    
+
+    
+
+    
+    <div class="border-l-4 border-blue-500 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg p-5">
+      <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">Objective</div>
+      <p class="italic font-medium text-gray-800 dark:text-gray-200">&ldquo;Development of a free, low-maintenance system for automatically monitoring multiple websites and sending notifications when outages occur. Although many online services offer uptime monitoring, including free tiers for a limited number of websites, such as <a href="https://uptimerobot.com">https://uptimerobot.com</a>, my goal was to solve the problem without relying on a third-party tool.&rdquo;</p>
+    </div>
+    
+  </section>
+  
+
+  
+  
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+
+    
+    <section class="lg:col-span-2 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+      <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <ion-icon name="git-network-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+        Approach &amp; Workflow
+      </h2>
+
+      
+      <div class="text-gray-700 dark:text-gray-300 leading-relaxed [&>p:not(:last-child)]:mb-4 mb-8">
+        Development of a lightweight, serverless monitoring tool based on Python and GitHub Actions. The solution checks the status of multiple websites at configurable intervals and automatically sends a clear HTML email with a status overview when an outage is detected. All configuration, from the list of monitored websites to the email credentials, is managed securely through GitHub Secrets, so sensitive data is never visible in the code or repository. Particular attention was given to robust error handling, secure configuration management and a clearly structured, easy-to-read notification email.
+      </div>
+      
+
+      
+      <div class="grid sm:grid-cols-2 gap-4">
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Step 1: Configuration</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Store the websites to be monitored and the email credentials as GitHub Secrets</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Step 2: Scheduled execution</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Automatically start each check through a cron schedule in GitHub Actions</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Step 3: Status check</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Request each configured website and evaluate its HTTP status code</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Step 4: Formatting</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Compile the results in a clear HTML table showing the status of each website</div>
+        </div>
+        
+        <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+          <div class="text-xs font-mono uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Step 5: Notification</div>
+          <div class="font-bold text-gray-900 dark:text-gray-100">Send an email only when an outage is detected, including a timestamp and a link to the repository</div>
+        </div>
+        
+      </div>
+      
+    </section>
+    
+
+    
+    <section class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-8">
+      <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <ion-icon name="terminal-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+        Technology &amp; Stack
+      </h2>
+      <div class="flex flex-wrap gap-2">
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Claude</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Vibe (Mistral)</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Python</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Actions</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">GitHub Secrets</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">SMTP</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">HTML</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">CSS</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Cron</span>
+        
+        <span class="text-xs font-mono uppercase tracking-wide bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">Git</span>
+        
+      </div>
+    </section>
+    
+
+  </div>
+  
+
+  
+  
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="help-circle-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Key Learnings
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Configuration Without Code</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Keeping code and configuration strictly separate through GitHub Secrets makes it possible to change the website list, interval or recipients without modifying the source code.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Iterative Troubleshooting</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Issues such as embedded line breaks in secrets or email header errors showed how important defensive parsing and input sanitisation are, even in seemingly simple scripts.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Security Awareness</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">An external security audit showed that even small tools benefit from basic security principles, including correct URL parsing, HTML escaping and explicit TLS certificate verification.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Serverless Architecture</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">GitHub Actions is also suitable for recurring background tasks beyond CI/CD, which removes the need for dedicated server infrastructure for private projects of this scale.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  
+  
+  
+    
+  
+  <section class="mb-10" x-data='{ open: false, index: 0, images: [&#34;/selected-projects/images/uptime-monitor/uptime_mail.jpg&#34;] }' @keydown.escape.window="open = false" @keydown.arrow-left.window="if (open) index = (index - 1 + images.length) % images.length" @keydown.arrow-right.window="if (open) index = (index + 1) % images.length">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="eye-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Screenshots &amp; Interface
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="flex flex-wrap gap-4">
+      
+      <button type="button" @click="open = true; index = 0" class="cursor-zoom-in">
+        <img src="/selected-projects/images/uptime-monitor/uptime_mail.jpg" alt="Uptime Monitor Screenshot" class="rounded-lg border border-gray-200 dark:border-gray-700 h-48 w-auto object-cover hover:opacity-80 transition-opacity" loading="lazy">
+      </button>
+      
+    </div>
+
+    <div
+      x-show="open"
+      x-transition.opacity
+      @click="open = false"
+      class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6 md:p-16 cursor-zoom-out"
+      style="display: none;"
+    >
+      <img :src="images[index]" class="max-w-3xl max-h-[75vh] w-auto h-auto rounded-lg cursor-default" @click.stop>
+
+      <button type="button" @click.stop="index = (index - 1 + images.length) % images.length" x-show="images.length > 1" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+      <button type="button" @click.stop="index = (index + 1) % images.length" x-show="images.length > 1" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+      <button type="button" @click.stop="open = false" class="absolute top-4 right-4 md:top-6 md:right-6 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div x-show="images.length > 1" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm font-mono" x-text="(index + 1) + ' / ' + images.length"></div>
+    </div>
+  </section>
+  
+
+  
+  
+  <section class="mb-10">
+    <h2 class="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <ion-icon name="trending-up-outline" class="text-blue-600 dark:text-blue-400 text-xl"></ion-icon>
+      Enhancement Ideas &amp; Considerations
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700 mb-6">
+    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">01</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Status Change Logic</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Send notifications only when the status changes (up→down, down→up), rather than after every check during an ongoing outage.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">02</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Alternative Notification Channels</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Integrate Slack or Discord webhooks as an alternative or addition to email notifications.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">03</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Extended Status Logic</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Include response times and historical availability rather than only checking whether a website is reachable.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">04</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">SSL Certificate Check</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Send a warning when the SSL certificate of a monitored website is about to expire, a common and easily preventable cause of outages.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">05</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">History Log</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Log check results in a file or GitHub issue to track how often and when a website has been unavailable over time.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-3">
+        <div class="font-mono font-bold text-blue-600 dark:text-blue-400 shrink-0">06</div>
+        <div>
+          <div class="font-bold text-gray-900 dark:text-gray-100 mb-1">Individual Check Intervals per Website</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">Some websites are more critical than others, so different check frequencies may be more useful than one global interval for all websites.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  
+
+  
+  <div class="text-center pt-6">
+    <a href="http://localhost:1313/selected-projects/" class="inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wide px-6 py-3 rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-orange-500 dark:hover:bg-orange-600 transition-colors duration-200">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Back
+    </a>
+  </div>
+
+</div>
+
+    </main>
+    <footer>
+      <footer class="container mx-auto flex justify-center items-center text-sm pt-10 pb-6 flex-wrap gap-4 text-gray-700 dark:text-gray-300">
+    <div>
+         
+            2026 &copy; Balázs Kubinszky. All Rights Reserved.
+        
+    </div>
+</footer>
+    </footer>
+  </div>
+   
+   
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

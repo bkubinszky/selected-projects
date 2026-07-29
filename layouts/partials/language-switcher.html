@@ -1,0 +1,69 @@
+{{- /*
+Sprachumschalter als Dropdown. Zeigt nur ein Icon zum Öffnen, die
+Dropdown-Optionen zeigen die Sprachcodes (DE, EN). Verlinkt auf die
+übersetzte Version der aktuellen Seite, fällt auf die Startseite der
+Zielsprache zurück, falls keine Übersetzung existiert.
+
+@example: {{ partial "language-switcher.html" . }}
+*/ -}}
+
+{{- if gt (len site.Languages) 1 }}
+{{- $current := .Language.Lang }}
+
+<div class="relative" x-data="{ open: false }" @click.outside="open = false" @keydown.escape.window="open = false">
+
+  <button
+    type="button"
+    @click="open = !open"
+    :aria-expanded="open"
+    aria-haspopup="listbox"
+    class="flex items-center justify-center h-9 w-9 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+    title="{{ T "nav_language_tooltip" }}"
+  >
+    <ion-icon name="language-outline" class="text-xl" aria-hidden="true"></ion-icon>
+  </button>
+
+  <ul
+    x-show="open"
+    x-transition:enter="transition ease-out duration-150"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-100"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    class="absolute right-0 mt-2 w-14 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 py-1"
+    role="listbox"
+    x-cloak
+  >
+    {{- range site.Languages }}
+      {{- $lang := .Lang }}
+      {{- $isCurrent := eq $lang $current }}
+      {{- $target := "" }}
+      {{- if not $isCurrent }}
+        {{- range $.Translations }}
+          {{- if eq .Language.Lang $lang }}{{ $target = .Permalink }}{{ end }}
+        {{- end }}
+        {{- if eq $target "" }}
+          {{- range site.Home.Translations }}
+            {{- if eq .Language.Lang $lang }}{{ $target = .Permalink }}{{ end }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+
+    <li role="option" {{ if $isCurrent }}aria-selected="true"{{ end }}>
+      {{- if $isCurrent }}
+      <span class="block px-3 py-1.5 text-sm font-mono uppercase font-bold text-center text-orange-600 dark:text-orange-400">
+        {{ $lang | upper }}
+      </span>
+      {{- else }}
+      <a href="{{ $target }}"
+         @click="open = false"
+         class="block px-3 py-1.5 text-sm font-mono uppercase text-center text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-gray-50 dark:hover:bg-gray-700 transition ease-in-out">
+        {{ $lang | upper }}
+      </a>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

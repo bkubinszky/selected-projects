@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Balázs Kubinszky, MBA on Balázs Kubinszky</title>
+		<link>http://localhost:1313/selected-projects/en/</link>
+		<description>Recent content in Balázs Kubinszky, MBA on Balázs Kubinszky</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+			<managingEditor>balazs.kubinszky@gmail.com (Balázs Kubinszky)</managingEditor>
+		
+		
+			<webMaster>balazs.kubinszky@gmail.com (Balázs Kubinszky)</webMaster>
+		
+		
+		
+			<lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/selected-projects/en/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Uptime Monitor</title>
+				<link>http://localhost:1313/selected-projects/en/posts/uptime-monitor/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/posts/uptime-monitor/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Machine-Readable Product Catalogue for AI Agents &amp; Applications</title>
+				<link>http://localhost:1313/selected-projects/en/posts/llm-prodcat/</link>
+				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/posts/llm-prodcat/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Career Profile Repository</title>
+				<link>http://localhost:1313/selected-projects/en/posts/karriere-profil/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/posts/karriere-profil/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>RSS Digest &amp; AI News Summary</title>
+				<link>http://localhost:1313/selected-projects/en/posts/rss-digest/</link>
+				<pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/posts/rss-digest/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AI Content Engine</title>
+				<link>http://localhost:1313/selected-projects/en/posts/ai-content-engine/</link>
+				<pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/posts/ai-content-engine/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Wien Ticker</title>
+				<link>http://localhost:1313/selected-projects/en/posts/wien-ticker/</link>
+				<pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/en/posts/wien-ticker/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
