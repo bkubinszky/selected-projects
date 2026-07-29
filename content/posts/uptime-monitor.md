@@ -9,7 +9,7 @@ status: "WPT"
 status_note: "Working Prototype: das erste funktionstüchtige Modell eines Produkts."
 github: "https://github.com/bkubinszky/uptime-monitoring"
 tags: ["GitHub Actions", "GitHub Secrets", "Python", "SMTP", "HTML", "CSS"]
-description: "Ein kleines Python-Projekt zur Überwachung der Verfügbarkeit von Websites über GitHub Actions und zum Versenden von E-Mail-Benachrichtigungen, falls eine Website ausfällt."
+description: "Ein Python-Projekt zur server- und kostenlosen Überwachung der Verfügbarkeit von Websites"
 
 problem:
   intro: "Websites und Services können jederzeit ausfallen, oft unbemerkt, bis Nutzer selbst darauf stoßen. Ohne eigene Serverinfrastruktur oder kostenpflichtige Monitoring-Dienste bleibt ein Ausfall häufig längere Zeit unentdeckt. Der Uptime Monitor löst dieses Problem durch eine serverlose, kostenfreie Lösung, die ausschließlich auf bestehender GitHub-Infrastruktur läuft und automatisiert per E-Mail informiert, sobald ein überwachter Dienst nicht mehr erreichbar ist."
