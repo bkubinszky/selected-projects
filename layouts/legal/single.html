@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="max-w-3xl mx-auto py-8">
+  <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">{{ .Title }}</h1>
+
+  <div class="prose dark:prose-invert max-w-none
+              prose-headings:text-xl prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100
+              prose-p:text-gray-700 dark:prose-p:text-gray-300
+              prose-a:text-orange-600 dark:prose-a:text-orange-400">
+    {{ .Content }}
+  </div>
+
+  <div class="text-center pt-10">
+    <a href="{{ site.Home.RelPermalink }}" class="inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wide px-6 py-3 rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-orange-500 dark:hover:bg-orange-600 transition-colors duration-200">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      {{ T "single_back_link" }}
+    </a>
+  </div>
+</article>
+{{ end }}

@@ -13,3 +13,6 @@ single_back_link = "Back"
 
 nav_language_tooltip = "Switch language"
 nav_theme_tooltip = "Dark / light mode"
+
+footer_impressum_link = "Legal Notice"
+footer_privacy_link = "Privacy Policy"

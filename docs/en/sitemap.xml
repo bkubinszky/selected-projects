@@ -4,7 +4,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bkubinszky.github.io/selected-projects/en/</loc>
-    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
@@ -15,6 +15,35 @@
                 hreflang="en-us"
                 href="https://bkubinszky.github.io/selected-projects/en/"
                 />
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/en/legal/imprint/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-de"
+                href="https://bkubinszky.github.io/selected-projects/legal/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://bkubinszky.github.io/selected-projects/en/legal/imprint/"
+                />
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/en/legal/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-de"
+                href="https://bkubinszky.github.io/selected-projects/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://bkubinszky.github.io/selected-projects/en/legal/"
+                />
+  </url><url>
+    <loc>https://bkubinszky.github.io/selected-projects/en/legal/privacy/</loc>
+    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/en/tags/css/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>

@@ -13,3 +13,6 @@ single_back_link = "Zurück"
 
 nav_language_tooltip = "Sprache wechseln"
 nav_theme_tooltip = "Dunkel / hell"
+
+footer_impressum_link = "Impressum"
+footer_privacy_link = "Datenschutz"

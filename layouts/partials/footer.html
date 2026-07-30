@@ -1,4 +1,21 @@
-<footer class="container mx-auto flex justify-center items-center text-sm pt-10 pb-6 flex-wrap gap-4 text-gray-700 dark:text-gray-300">
+<footer class="flex justify-center items-center text-sm pt-10 pb-6 flex-wrap gap-4 text-gray-700 dark:text-gray-300">
+
+    {{- $impressum := site.GetPage "/legal/impressum" }}
+    {{- if not $impressum }}{{ $impressum = site.GetPage "/legal/imprint" }}{{ end }}
+    {{- $datenschutz := site.GetPage "/legal/datenschutz" }}
+    {{- if not $datenschutz }}{{ $datenschutz = site.GetPage "/legal/privacy" }}{{ end }}
+
+    {{- if or $impressum $datenschutz }}
+    <nav class="flex gap-4">
+      {{- with $impressum }}
+      <a href="{{ .RelPermalink }}" class="hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out">{{ T "footer_impressum_link" }}</a>
+      {{- end }}
+      {{- with $datenschutz }}
+      <a href="{{ .RelPermalink }}" class="hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out">{{ T "footer_privacy_link" }}</a>
+      {{- end }}
+    </nav>
+    {{- end }}
+
     <div>
          {{ if .Site.Params.footer.content }}
              {{ .Site.Params.footer.content | .RenderString }}
