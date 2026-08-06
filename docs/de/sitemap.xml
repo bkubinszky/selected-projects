@@ -18,6 +18,16 @@
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/legal/datenschutz/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-de"
+                href="https://bkubinszky.github.io/selected-projects/legal/datenschutz/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://bkubinszky.github.io/selected-projects/en/legal/privacy/"
+                />
   </url><url>
     <loc>https://bkubinszky.github.io/selected-projects/legal/impressum/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>

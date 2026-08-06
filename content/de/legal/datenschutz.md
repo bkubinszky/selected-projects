@@ -1,6 +1,7 @@
 ---
 title: "Datenschutzerklärung"
 date: 2026-07-30
+translationKey: "privacy"
 ---
 
 ## Verantwortlicher
