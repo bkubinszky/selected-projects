@@ -14,9 +14,16 @@
 		
 		
 		
-			<lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sat, 01 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://bkubinszky.github.io/selected-projects/en/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Product Idea Stress Tester</title>
+				<link>https://bkubinszky.github.io/selected-projects/en/posts/product-idea-stress-tester/</link>
+				<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>https://bkubinszky.github.io/selected-projects/en/posts/product-idea-stress-tester/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Legal Notice</title>
 				<link>https://bkubinszky.github.io/selected-projects/en/legal/imprint/</link>
