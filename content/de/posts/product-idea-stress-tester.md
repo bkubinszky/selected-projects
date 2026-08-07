@@ -2,7 +2,7 @@
 title: "Product Idea Stress Tester"
 preview: true
 date: 2026-08-01
-order: 51
+order: 39
 icon: "git-branch-outline"
 category: "Automated AI Workflow"
 status: "MVP"
