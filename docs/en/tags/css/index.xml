@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>CSS on Balázs Kubinszky</title>
-		<link>https://bkubinszky.github.io/selected-projects/en/tags/css/</link>
+		<link>http://localhost:1313/selected-projects/en/tags/css/</link>
 		<description>Recent content in CSS on Balázs Kubinszky</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -16,12 +16,12 @@
 		
 			<lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://bkubinszky.github.io/selected-projects/en/tags/css/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/selected-projects/en/tags/css/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Uptime Monitor</title>
-				<link>https://bkubinszky.github.io/selected-projects/en/posts/uptime-monitor/</link>
+				<link>http://localhost:1313/selected-projects/en/posts/uptime-monitor/</link>
 				<pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/en/posts/uptime-monitor/</guid>
+				<guid>http://localhost:1313/selected-projects/en/posts/uptime-monitor/</guid>
 				<description></description>
 			</item>
 	</channel>

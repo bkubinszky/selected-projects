@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Synchronous AI on Balázs Kubinszky</title>
+		<link>http://localhost:1313/selected-projects/tags/synchronous-ai/</link>
+		<description>Recent content in Synchronous AI on Balázs Kubinszky</description>
+		<generator>Hugo</generator>
+		<language>de-de</language>
+		
+			<managingEditor>balazs.kubinszky@gmail.com (Balázs Kubinszky)</managingEditor>
+		
+		
+			<webMaster>balazs.kubinszky@gmail.com (Balázs Kubinszky)</webMaster>
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/selected-projects/tags/synchronous-ai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Product Idea Stress Tester</title>
+				<link>http://localhost:1313/selected-projects/posts/product-idea-stress-tester/</link>
+				<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>http://localhost:1313/selected-projects/posts/product-idea-stress-tester/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

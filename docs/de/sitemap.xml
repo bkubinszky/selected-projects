@@ -3,490 +3,516 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bkubinszky.github.io/selected-projects/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/agentic-workflow/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/"
+                href="http://localhost:1313/selected-projects/tags/agentic-workflow/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/"
+                href="http://localhost:1313/selected-projects/en/tags/agentic-workflow/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/crewai/</loc>
+    <loc>http://localhost:1313/selected-projects/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/crewai/"
+                href="http://localhost:1313/selected-projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/crewai/"
+                href="http://localhost:1313/selected-projects/en/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/local-llm/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/crewai/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/local-llm/"
+                href="http://localhost:1313/selected-projects/tags/crewai/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/local-llm/"
+                href="http://localhost:1313/selected-projects/en/tags/crewai/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/multi-agent-ai/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/local-llm/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/multi-agent-ai/"
+                href="http://localhost:1313/selected-projects/tags/local-llm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/multi-agent-ai/"
+                href="http://localhost:1313/selected-projects/en/tags/local-llm/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/ollama/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/multi-agent-ai/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/ollama/"
+                href="http://localhost:1313/selected-projects/tags/multi-agent-ai/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/ollama/"
+                href="http://localhost:1313/selected-projects/en/tags/multi-agent-ai/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/product-idea-stress-tester/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/ollama/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/product-idea-stress-tester/"
+                href="http://localhost:1313/selected-projects/tags/ollama/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/product-idea-stress-tester/"
+                href="http://localhost:1313/selected-projects/en/tags/ollama/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/python/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/product-idea-stress-tester/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/python/"
+                href="http://localhost:1313/selected-projects/posts/product-idea-stress-tester/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/python/"
+                href="http://localhost:1313/selected-projects/en/posts/product-idea-stress-tester/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/python/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/"
+                href="http://localhost:1313/selected-projects/tags/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/"
+                href="http://localhost:1313/selected-projects/en/tags/python/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/legal/datenschutz/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/synchronous-ai/</loc>
+    <lastmod>2026-08-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-de"
+                href="http://localhost:1313/selected-projects/tags/synchronous-ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/selected-projects/en/tags/synchronous-ai/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/selected-projects/tags/</loc>
+    <lastmod>2026-08-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-de"
+                href="http://localhost:1313/selected-projects/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/selected-projects/en/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/selected-projects/legal/datenschutz/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/legal/datenschutz/"
+                href="http://localhost:1313/selected-projects/legal/datenschutz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/legal/privacy/"
+                href="http://localhost:1313/selected-projects/en/legal/privacy/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/legal/impressum/</loc>
+    <loc>http://localhost:1313/selected-projects/legal/impressum/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/legal/impressum/"
+                href="http://localhost:1313/selected-projects/legal/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/legal/imprint/"
+                href="http://localhost:1313/selected-projects/en/legal/imprint/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/legal/</loc>
+    <loc>http://localhost:1313/selected-projects/legal/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/legal/"
+                href="http://localhost:1313/selected-projects/legal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/legal/"
+                href="http://localhost:1313/selected-projects/en/legal/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/css/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/css/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/css/"
+                href="http://localhost:1313/selected-projects/tags/css/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/css/"
+                href="http://localhost:1313/selected-projects/en/tags/css/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/github-actions/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/github-actions/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/github-actions/"
+                href="http://localhost:1313/selected-projects/tags/github-actions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/github-actions/"
+                href="http://localhost:1313/selected-projects/en/tags/github-actions/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/github-secrets/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/github-secrets/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/github-secrets/"
+                href="http://localhost:1313/selected-projects/tags/github-secrets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/github-secrets/"
+                href="http://localhost:1313/selected-projects/en/tags/github-secrets/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/html/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/html/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/html/"
+                href="http://localhost:1313/selected-projects/tags/html/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/html/"
+                href="http://localhost:1313/selected-projects/en/tags/html/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/smtp/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/smtp/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/smtp/"
+                href="http://localhost:1313/selected-projects/tags/smtp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/smtp/"
+                href="http://localhost:1313/selected-projects/en/tags/smtp/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/uptime-monitor/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/uptime-monitor/</loc>
     <lastmod>2026-07-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/uptime-monitor/"
+                href="http://localhost:1313/selected-projects/posts/uptime-monitor/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/uptime-monitor/"
+                href="http://localhost:1313/selected-projects/en/posts/uptime-monitor/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/aeo/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/aeo/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/aeo/"
+                href="http://localhost:1313/selected-projects/tags/aeo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/aeo/"
+                href="http://localhost:1313/selected-projects/en/tags/aeo/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/agentic-commerce/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/agentic-commerce/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/agentic-commerce/"
+                href="http://localhost:1313/selected-projects/tags/agentic-commerce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/agentic-commerce/"
+                href="http://localhost:1313/selected-projects/en/tags/agentic-commerce/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/llm/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/llm/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/llm/"
+                href="http://localhost:1313/selected-projects/tags/llm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/llm/"
+                href="http://localhost:1313/selected-projects/en/tags/llm/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/llm-prodcat/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/llm-prodcat/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/llm-prodcat/"
+                href="http://localhost:1313/selected-projects/posts/llm-prodcat/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/llm-prodcat/"
+                href="http://localhost:1313/selected-projects/en/posts/llm-prodcat/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/pim/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/pim/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/pim/"
+                href="http://localhost:1313/selected-projects/tags/pim/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/pim/"
+                href="http://localhost:1313/selected-projects/en/tags/pim/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/produktdaten/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/produktdaten/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/karriere-profil/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/karriere-profil/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/karriere-profil/"
+                href="http://localhost:1313/selected-projects/posts/karriere-profil/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/karriere-profil/"
+                href="http://localhost:1313/selected-projects/en/posts/karriere-profil/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/json/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/json/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/json/"
+                href="http://localhost:1313/selected-projects/tags/json/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/json/"
+                href="http://localhost:1313/selected-projects/en/tags/json/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/llm-ready/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/llm-ready/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/llm-ready/"
+                href="http://localhost:1313/selected-projects/tags/llm-ready/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/llm-ready/"
+                href="http://localhost:1313/selected-projects/en/tags/llm-ready/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/markdown/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/markdown/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/markdown/"
+                href="http://localhost:1313/selected-projects/tags/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/markdown/"
+                href="http://localhost:1313/selected-projects/en/tags/markdown/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/ai-workflow/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/ai-workflow/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/ai-workflow/"
+                href="http://localhost:1313/selected-projects/tags/ai-workflow/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/ai-workflow/"
+                href="http://localhost:1313/selected-projects/en/tags/ai-workflow/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/api/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/api/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/api/"
+                href="http://localhost:1313/selected-projects/tags/api/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/api/"
+                href="http://localhost:1313/selected-projects/en/tags/api/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/automatisierung/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/automatisierung/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/rss-digest/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/rss-digest/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/rss-digest/"
+                href="http://localhost:1313/selected-projects/posts/rss-digest/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/rss-digest/"
+                href="http://localhost:1313/selected-projects/en/posts/rss-digest/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/.../</loc>
+    <loc>http://localhost:1313/selected-projects/tags/.../</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/.../"
+                href="http://localhost:1313/selected-projects/tags/.../"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/.../"
+                href="http://localhost:1313/selected-projects/en/tags/.../"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/ai-content-engine/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/ai-content-engine/</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/ai-content-engine/"
+                href="http://localhost:1313/selected-projects/posts/ai-content-engine/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/ai-content-engine/"
+                href="http://localhost:1313/selected-projects/en/posts/ai-content-engine/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/content/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/content/</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/content/"
+                href="http://localhost:1313/selected-projects/tags/content/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/content/"
+                href="http://localhost:1313/selected-projects/en/tags/content/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/martech/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/martech/</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/martech/"
+                href="http://localhost:1313/selected-projects/tags/martech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/martech/"
+                href="http://localhost:1313/selected-projects/en/tags/martech/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/https/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/https/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/https/"
+                href="http://localhost:1313/selected-projects/tags/https/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/https/"
+                href="http://localhost:1313/selected-projects/en/tags/https/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/tags/open-data/</loc>
+    <loc>http://localhost:1313/selected-projects/tags/open-data/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/tags/open-data/"
+                href="http://localhost:1313/selected-projects/tags/open-data/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/tags/open-data/"
+                href="http://localhost:1313/selected-projects/en/tags/open-data/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/posts/wien-ticker/</loc>
+    <loc>http://localhost:1313/selected-projects/posts/wien-ticker/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/posts/wien-ticker/"
+                href="http://localhost:1313/selected-projects/posts/wien-ticker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/posts/wien-ticker/"
+                href="http://localhost:1313/selected-projects/en/posts/wien-ticker/"
                 />
   </url><url>
-    <loc>https://bkubinszky.github.io/selected-projects/categories/</loc>
+    <loc>http://localhost:1313/selected-projects/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="https://bkubinszky.github.io/selected-projects/categories/"
+                href="http://localhost:1313/selected-projects/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://bkubinszky.github.io/selected-projects/en/categories/"
+                href="http://localhost:1313/selected-projects/en/categories/"
                 />
   </url>
 </urlset>

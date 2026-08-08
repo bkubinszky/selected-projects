@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>PIM on Balázs Kubinszky</title>
-		<link>https://bkubinszky.github.io/selected-projects/en/tags/pim/</link>
+		<link>http://localhost:1313/selected-projects/en/tags/pim/</link>
 		<description>Recent content in PIM on Balázs Kubinszky</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -16,12 +16,12 @@
 		
 			<lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://bkubinszky.github.io/selected-projects/en/tags/pim/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/selected-projects/en/tags/pim/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Machine-Readable Product Catalogue for AI Agents &amp; Applications</title>
-				<link>https://bkubinszky.github.io/selected-projects/en/posts/llm-prodcat/</link>
+				<link>http://localhost:1313/selected-projects/en/posts/llm-prodcat/</link>
 				<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
-				<guid>https://bkubinszky.github.io/selected-projects/en/posts/llm-prodcat/</guid>
+				<guid>http://localhost:1313/selected-projects/en/posts/llm-prodcat/</guid>
 				<description></description>
 			</item>
 	</channel>
