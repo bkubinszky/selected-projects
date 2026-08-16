@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Legals on Balázs Kubinszky</title>
+		<link>https://bkubinszky.github.io/selected-projects/legal/</link>
+		<description>Recent content in Legals on Balázs Kubinszky</description>
+		<generator>Hugo</generator>
+		<language>de-de</language>
+		
+			<managingEditor>balazs.kubinszky@gmail.com (Balázs Kubinszky)</managingEditor>
+		
+		
+			<webMaster>balazs.kubinszky@gmail.com (Balázs Kubinszky)</webMaster>
+		
+		
+		
+			<lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://bkubinszky.github.io/selected-projects/legal/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Datenschutzerklärung</title>
+				<link>https://bkubinszky.github.io/selected-projects/legal/datenschutz/</link>
+				<pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>https://bkubinszky.github.io/selected-projects/legal/datenschutz/</guid>
+				<description>&lt;h2 id=&#34;verantwortlicher&#34;&gt;Verantwortlicher&lt;/h2&gt;&#xA;&lt;p&gt;Verantwortlich für die Datenverarbeitung auf dieser Website ist:&lt;/p&gt;&#xA;&lt;p&gt;Balázs Kubinszky&lt;br&gt;&#xA;E-Mail: &lt;a href=&#34;mailto:balazs.kubinszky@gmail.com&#34;&gt;balazs.kubinszky@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;hosting&#34;&gt;Hosting&lt;/h2&gt;&#xA;&lt;p&gt;Diese Website wird über GitHub Pages gehostet, einen Dienst der GitHub Inc. (bzw. deren Konzernmutter Microsoft Corporation) mit Sitz in den USA. Beim Aufruf dieser Website werden automatisch technische Zugriffsdaten (u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, verwendeter Browser) durch den Hosting-Anbieter in sogenannten Server-Logfiles gespeichert. Diese Daten sind für den Betreiber dieser Website nicht einsehbar und werden ausschließlich zur Sicherstellung eines störungsfreien Betriebs sowie zur Absicherung der Systeme durch GitHub verarbeitet.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Impressum</title>
+				<link>https://bkubinszky.github.io/selected-projects/legal/impressum/</link>
+				<pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate><author>balazs.kubinszky@gmail.com (Balázs Kubinszky)</author>
+				<guid>https://bkubinszky.github.io/selected-projects/legal/impressum/</guid>
+				<description>&lt;h2 id=&#34;offenlegung-gemäß--5-ecg&#34;&gt;Offenlegung gemäß § 5 ECG&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; Balázs Kubinszky&lt;br&gt;&#xA;&lt;strong&gt;Anschrift:&lt;/strong&gt; 1130 Wien, Stranzenberggasse 9&lt;/p&gt;&#xA;&lt;h2 id=&#34;zweck-der-website&#34;&gt;Zweck der Website&lt;/h2&gt;&#xA;&lt;p&gt;Diese Website dient als privates Portfolio zur Darstellung persönlicher Projekte, Experimente und Use Cases. Es handelt sich um kein kommerzielles Angebot; es werden weder Waren noch Dienstleistungen verkauft.&lt;/p&gt;&#xA;&lt;h2 id=&#34;haftung-für-inhalte&#34;&gt;Haftung für Inhalte&lt;/h2&gt;&#xA;&lt;p&gt;Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.&lt;/p&gt;&#xA;&lt;h2 id=&#34;haftung-für-links&#34;&gt;Haftung für Links&lt;/h2&gt;&#xA;&lt;p&gt;Diese Website enthält Links zu externen Websites Dritter (z. B. GitHub, LinkedIn), auf deren Inhalte kein Einfluss besteht. Für diese fremden Inhalte kann daher keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seite verantwortlich.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
