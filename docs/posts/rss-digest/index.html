@@ -23,7 +23,7 @@
   
     
       
-        <link rel="stylesheet" href="/selected-projects/css/main.93f4211b191bd680ade88fbdf6e349ca07fd9c897e7ce3e44a48e6101e47a70a.css" integrity="sha256-k/QhGxkb1oCt6I&#43;99uNJygf9nIl&#43;fOPkSkjmEB5Hpwo=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/selected-projects/css/main.382361e421875071530910f17789394a5b6adb185aec487c17ca415862cba945.css" integrity="sha256-OCNh5CGHUHFTCRDxd4k5Sltq2xha7Eh8F8pBWGLLqUU=" crossorigin="anonymous">
       
     
   
@@ -436,13 +436,19 @@
     </div>
 
     <div
-      x-show="open"
-      x-transition.opacity
-      @click="open = false"
-      class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6 md:p-16 cursor-zoom-out"
-      style="display: none;"
+  x-show="open"
+  x-transition.opacity
+  @click="open = false"
+  class="fixed inset-0 z-50 bg-black/80 overflow-auto p-6 md:p-12 cursor-zoom-out"
+  style="display: none;"
+>
+  <div class="min-h-full flex w-max min-w-full items-start">
+    <img
+      :src="images[index]"
+      class="w-auto h-auto max-w-none mx-auto rounded-lg cursor-default"
+      @click.stop
     >
-      <img :src="images[index]" class="max-w-3xl max-h-[75vh] w-auto h-auto rounded-lg cursor-default" @click.stop>
+  </div>
 
       <button type="button" @click.stop="index = (index - 1 + images.length) % images.length" x-show="images.length > 1" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-black/50 text-white text-2xl leading-none hover:text-orange-400 hover:bg-black/70 transition-colors">
         
